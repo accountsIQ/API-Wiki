@@ -1,0 +1,178 @@
+I"�#<h1 id="troubleshooting">Troubleshooting</h1>
+
+<h2 id="login-errors">Login Errors</h2>
+
+<p>Uncaught SoapFault exception:</p>
+
+<p><code class="language-plaintext highlighter-rouge">[WSDL] SOAP-ERROR: Parsing WSDL: Couldn't load from ....</code></p>
+
+<p>This is likely due to misconfiguring the request.</p>
+
+<p>The following sample shows how to configure your login request:</p>
+
+<h3 id="code-sample-php">Code Sample: PHP</h3>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;?php
+
+$wsdlUrl = "https://hostacct.com/system/dashboard/integration/integration_1_1.asmx?wsdl";
+
+$opts = array(
+		'ssl' =&gt; array( 
+			'verify_peer'=&gt;true, 
+			'verify_peer_name'=&gt;true,
+			'crypto_method' =&gt; STREAM_CRYPTO_METHOD_TLS_CLIENT)
+);
+
+$params = array(
+                'soap_version'=&gt;SOAP_1_1,
+                'exceptions'=&gt;true,
+                'trace'=&gt;0,
+                'cache_wsdl'=&gt;WSDL_CACHE_NONE,
+                'stream_context' =&gt; stream_context_create($opts)
+        );
+
+$client = new SoapClient($wsdlUrl, $params);
+
+$vars = array(
+			'companyID'=&gt;'YOUR_COMPANY_ID',
+			'partnerKey'=&gt;'YOUR_PARTNER_KEY',
+			'userKey'=&gt;'YOUR_USER_KEY');
+			
+$result = $client-&gt;Login($vars);
+
+echo $result-&gt;LoginResult
+
+?&gt;
+</code></pre></div></div>
+<p>The LoginResult is your authentication token to be used in all subsequent API calls.</p>
+
+<h2 id="sales-receipt-errors">Sales Receipt Errors</h2>
+<p>If you receive an error message, check that you have included the following mandatory variables:</p>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">BankAccountCode</code></li>
+  <li><code class="language-plaintext highlighter-rouge">CheckReference </code></li>
+  <li><code class="language-plaintext highlighter-rouge">CustomerCode</code></li>
+</ul>
+
+<h2 id="sales-order-errors">Sales Order Errors</h2>
+<p>If you receive an error message, check that the following are correct:</p>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">Author User ID</code> should be null.</li>
+  <li><code class="language-plaintext highlighter-rouge">Creation Date</code> should be null.</li>
+  <li><code class="language-plaintext highlighter-rouge">CurrencyCode</code> is mandatory.</li>
+  <li><code class="language-plaintext highlighter-rouge">Hold</code> should be 0.</li>
+  <li><code class="language-plaintext highlighter-rouge">OrderDate</code> is mandatory.</li>
+  <li><code class="language-plaintext highlighter-rouge">OrderID</code> should be blank.</li>
+  <li>“N/A” is not a recognised value. Use null (xsi:nil=”true”) instead.</li>
+  <li><code class="language-plaintext highlighter-rouge">QuoteID</code> should be null. Do not specify a row version number.</li>
+  <li><code class="language-plaintext highlighter-rouge">Status</code> should be null.</li>
+</ul>
+
+<p>In each line:</p>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">CreationDate</code> should be null. Do not specify a row version number.</li>
+  <li><code class="language-plaintext highlighter-rouge">OpeningStockGLAccountCode</code> is mandatory.</li>
+  <li><code class="language-plaintext highlighter-rouge">OrderItemIDshould</code> be 0.</li>
+  <li><code class="language-plaintext highlighter-rouge">QuoteItemID</code> should be null.</li>
+</ul>
+
+<h2 id="bulk-processing-speed">Bulk Processing Speed</h2>
+<p><strong>Issue:</strong> I need to create, populate, and post thousands of invoices. How can I speed up the process?</p>
+
+<p><strong>Solution:</strong> 
+Use bulk methods instead of single methods. Similar operations exist for purchases. 
+The bulk methods can support thousands of records a second. You can identify the bulk methods by their plural names:</p>
+<ul>
+  <li>Use <code class="language-plaintext highlighter-rouge">GetNewSalesInvoices</code> instead of <code class="language-plaintext highlighter-rouge">GetNewSalesInvoice</code></li>
+  <li>Use <code class="language-plaintext highlighter-rouge">PostInvoicesGetBackTransactionIDs</code> instead of <code class="language-plaintext highlighter-rouge">PostInvoiceGetBackTransactionID</code></li>
+</ul>
+
+<h2 id="creating-a-customer-account">Creating a Customer Account</h2>
+<p><strong>Issue:</strong> The customer I am trying to create is not saving.</p>
+
+<p><strong>Solution:</strong>
+There can be multiple reasons for this. Check the following:</p>
+<ul>
+  <li>The customer code is specified.</li>
+  <li>The customer code is upper case.</li>
+  <li>The BankCode  exists in the system (The <code class="language-plaintext highlighter-rouge">BankCode</code> is the General Ledger code representing the bank in the system whereas the <code class="language-plaintext highlighter-rouge">BankAccountCode</code> is the physical bank account number in the bank branch).</li>
+  <li>The referral ID is not specified through the API. It must be left blank/null.</li>
+</ul>
+
+<h3 id="code-sample-c">Code Sample: C#</h3>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>      private void CreateNewCustomer()
+      {
+	      Integration_1_1.Integration_1_1 ws = new Integration_1_1.Integration_1_1();
+	      String auth = ws.Login(companyID, partnerKey, userKey);
+
+	      if (auth != null)
+	      {
+		      Integration_1_1.Customer customer = new Integration_1_1.Customer();
+
+		      customer.Name = "ABC Account 01";
+		      customer.Address1 = "this is my address 1";
+		      customer.Address2 = "this is my address 2";
+		      customer.City = "this is my city";
+		      customer.County_State = "this is my county";
+		      customer.Country = "this is my country";
+		      customer.PostCode = "this is my postcode";
+		      customer.Contact = "Contact";
+		      customer.Email = "abc@02.com";
+		      customer.Fax = "0123459";
+		      customer.Phone = "0123457";
+
+		      // This will not work because the account code was not set, and the system does not generate them
+		      // dynamically
+		      Integration_1_1.WSResult2OfBoolean result = ws.UpdateCustomer(auth, customer, true);
+		      Assert.IsNotNull(result);
+		      Assert.AreEqual(true, result.Result);
+	      }
+      }
+</code></pre></div></div>
+
+<h2 id="populating-customer-record-fields">Populating Customer Record Fields</h2>
+<p><strong>Issue:</strong> I want to create a new customer but I don’t know how to populate all fields in the customer record.</p>
+
+<p><strong>Solution:</strong> Use the <code class="language-plaintext highlighter-rouge">GetNewCustomerFromDefaults</code> method. This returns the shell of a customer pre-populated with all the default values. This is a useful method for creating a test customer.</p>
+
+<h2 id="creating-a-new-orderinvoice">Creating a New Order/Invoice</h2>
+
+<p><strong>Issue:</strong> I created a new order/invoice. I then retrieved it to check it was saved and updated it again, but this failed.</p>
+
+<p><strong>Solution:</strong> Send back the modified values in the retrieved order/invoice not the original. Otherwise, the values set during saving, such as <code class="language-plaintext highlighter-rouge">RowVersionNumber</code>, will not match.</p>
+
+<h2 id="getting-a-due-date-for-an-invoice">Getting a Due Date for an Invoice</h2>
+
+<p>First, using the <code class="language-plaintext highlighter-rouge">GetSupplier</code> or <code class="language-plaintext highlighter-rouge">GetCustomer</code> method, interrogate the supplier or customer and find the <code class="language-plaintext highlighter-rouge">CreditTermID</code>.</p>
+
+<h3 id="json-sample">JSON Sample</h3>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>"CreditTermID": "1": This needs to be matched to the output (an array of credit terms) from GetCreditTermList.
+
+            {
+                "Code": "1",
+                "Description": "30 Days",
+                "RowVersionNumber": "etHg5LRlYP4+UwTlPmufOSyLPWX/PSJckYmL/Pcqo8lGPpiBm6bYB08CiezrssIu",
+                "CreditDays": 30,
+                "EndOfMonth": false,
+                "Checker": {
+                    "IdLength": 50,
+                    "CodeLength": 50,
+                    "DescriptionLength": 200,
+                    "AuthorLength": 200,
+                    "CreditDayLength": 255
+                }
+            }
+</code></pre></div></div>
+
+<p>In this where the Code matches the supplier/customers <code class="language-plaintext highlighter-rouge">CreditTermID</code> you have two key pieces of information:</p>
+<ul>
+  <li>the number of days (<code class="language-plaintext highlighter-rouge">CreditDays</code>)</li>
+  <li>whether <code class="language-plaintext highlighter-rouge">EndOfMonth</code> is set to true or false. If false then it is invoice date plus the no of days, but if <code class="language-plaintext highlighter-rouge">EndOfMonth</code> is true that is then set from the last day of the month in which the invoice date falls.</li>
+</ul>
+
+<h3 id="see-more">See More:</h3>
+<ul>
+  <li><a href="/pages/specifications/">Specifications</a></li>
+  <li><a href="/pages/guidelines/">Guidelines</a></li>
+  <li><a href="/pages/authentication/">Authentication</a></li>
+</ul>
+:ET

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en" }}">
+  <head>
+    <meta charset="UTF-8">
+
+{% seo %}
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preload" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" as="style" type="text/css" crossorigin>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#157878">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+    <script src="https://kit.fontawesome.com/75a3ff46b4.js" crossorigin="anonymous"></script>
+    {% include head-custom.html %}
+  </head>
+  <body>
+    
+    <div class="header-container">
+      <header class="page-header" role="banner">
+      <div class="mobile-nav">
+        <div class="company-container">
+          <div class="company-name">
+            <a href="{{ '/index/' | absolute_url }}">
+              <span class="name-main hover-color">Accounts</span>
+              <span class="name-accent hover-color">IQ</span>
+            </a>
+          </div>
+        </div>
+        <div class="hamburger-container">
+          <a href="#"class="hamburger-menu">
+            <div class="toggle-icon bars">
+              <span class="bar hamburger-top"></span>
+              <span class="bar hamburger-middle"></span>
+              <span class="bar hamburger-bottom"></span>   
+            </div>
+          </a>
+        </div>        
+      </div>     
+        <div class="topnav-container">
+          <nav class="topnav">
+            <ul class="topnav-links"> 
+              <li><a href="https://github.com/accountsIQ/API-Wiki/wiki/">Docs</a></li>
+              <li><a href="https://www.accountsiq.com/company/background-story/">Company</a></li>
+              <li><a href="https://www.accountsiq.com/contact/">Contact</a></li>
+              <li><a href="https://www.accountsiq.com/success/support/">Support</a></li>
+            </ul>
+          </nav>
+        </div>       
+      </header>
+
+     
+    <div class="main-container"> 
+      <main id="content" class="main-content" role="main">
+      
+        <div class="sidenav-container">{% include navigation.html %}</div>
+        <div class="article">
+          <div class="article-contents">
+            <div class="article-category"><h5>{{ page.category }}</h5></div>
+                  {{ content }} 
+          </div>
+          <div class="in-this-article">{% include toc.html %}</div>
+        </div>
+      </main>
+    
+    <div class="footer-container">
+      <footer class="site-footer">AccountsIQ 2023</footer>
+    </div>
+    </div>
+  </body>
+</html>
+
+ <!-- ==========================HAMBURGER MENU======================================================== -->
+
+<script>
+const hamburgerMenu = document.getElementsByClassName('hamburger-menu')[0];
+const sideNav = document.getElementsByClassName('sidenav-container')[0];
+const article = document.getElementsByClassName('article')[0];
+const navToggle = document.getElementsByClassName('hamburger-menu')[0];
+
+hamburgerMenu.addEventListener('click', () => {
+    sideNav.classList.toggle('active')
+    article.classList.toggle('active')
+    navToggle.classList.toggle('active')
+    })
+
+
+window.addEventListener("resize", () => {
+    if(document.body.clientWidth > 769) {
+       sideNav.classList.remove('active') 
+       article.classList.remove('active')
+       navToggle.classList.remove('active')
+    }    
+})
+</script>

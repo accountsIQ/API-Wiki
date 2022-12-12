@@ -1,37 +1,48 @@
-## Welcome to GitHub Pages
+---
+# Feel free to add content and custom Front Matter to this file.
+# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
-You can use the [editor on GitHub](https://github.com/accountsIQ/API-Wiki/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+title: About
+layout: default
+category: Overview
+---
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+# About our API
 
-### Markdown
+## Introduction to APIs
+APIs are digital interfaces that allow disparate systems to communicate with each other. By integrating APIs into your business practice, you can tie together otherwise divergent business processes.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+APIs offer great flexibility in how you exchange data between systems, so you can tailor solutions to meet your specific business needs. Integrate AIQ with a third-party system to automatically send and retrieve the types of data most relevant to you.
 
-```markdown
-Syntax highlighted code block
+Take full advantage of the data accessibility that AIQ cloud-accounting offers. Because we maintain your data on our servers, it is continuously accessible to you over the internet. Take advantage of this data accessibility by integrating with our web service API.
 
-# Header 1
-## Header 2
-### Header 3
+## Availability
+All AIQ editions have access to our API without restriction. 
 
-- Bulleted
-- List
+## Types of Integrations
+AIQ offers a range of partner integrations to meet your needs. Alternatively, you can have our team custom design a solution for you or develop one independently.
 
-1. Numbered
-2. List
+**See:** [Integrate with AIQ](/pages/integration/)
 
-**Bold** and _Italic_ and `Code` text
+## Exposed Data
+The API allows you to access most entity level data. You cannot access customer (practice) level data.
+If you are interested in data that our API has not yet exposed, please contact us at [integration@accountsiq.com](mailto:integration@accountsiq.com) and we will take your suggestions into consideration.
 
-[Link](url) and ![Image](src)
-```
+## Compatibility 
+The AccountsIQ system evolves constantly and so does its API. To avoid incompatibilities with our integrator partner applications, we make backward compatible changes. We also offer a mailing list where developers can receive information on the latest bug fixes as well as new methods.
 
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
+**See:** [SOAP API Update Bulletin](https://github.com/accountsIQ/API-Wiki/wiki/AccountsIQ-SOAP-API-Update-Bulletins)
 
-### Jekyll Themes
+## Feedback and support
+For clarification on any aspects of this API, contact either:
+- [integration@accountsiq.com](mailto:integration@accountsiq.com)
+- [development@accountsiq.com](mailto:development@accountsiq.com)
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/accountsIQ/API-Wiki/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+### Learn More:
+- [Key Advantages of APIs](/pages/advantages/)
+- [Integrate with AIQ](/pages/integration/)
+- [Business Use Cases](/pages/usecases/)
+- [Popular Methods](/pages/datatypes/)
 
-### Support or Contact
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+

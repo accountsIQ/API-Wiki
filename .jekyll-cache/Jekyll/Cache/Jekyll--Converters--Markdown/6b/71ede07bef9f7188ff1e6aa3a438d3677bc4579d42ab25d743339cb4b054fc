@@ -1,0 +1,47 @@
+I"Á<h1 id="integrate-with-aiq">Integrate with AIQ</h1>
+<h2 id="integration-partners">Integration Partners</h2>
+<p>Our comprehensive development partnerships means we can quickly deploy integrated solutions for organisations, providing them with specific management information and real time reporting.</p>
+
+<p>We have also built business-wide solutions integrating data from other third-party sales and marketing systems.</p>
+
+<p>Our diverse integration partners include the following sectors:</p>
+
+<ul>
+  <li><strong>Booking:</strong> <a href="https://www.accountsiq.com/features/integrations/opera/">Opera</a>, <a href="https://www.accountsiq.com/features/integrations/cvent/">Cvent</a>, <a href="https://www.accountsiq.com/features/integrations/hotsoft/">HotSoft</a></li>
+  <li><strong>CRM:</strong> <a href="https://www.accountsiq.com/features/integrations/salesforce/">Salesforce</a></li>
+  <li><strong>Digitisation:</strong> <a href="https://www.accountsiq.com/features/integrations/autoentry/">AutoEntry</a>, <a href="https://www.accountsiq.com/features/integrations/kefron-ap/">Kefron</a></li>
+  <li><strong>Expense Management:</strong> <a href="https://www.accountsiq.com/features/integrations/concur/">Concur</a>, <a href="https://www.accountsiq.com/features/integrations/expensify/">Expensify</a></li>
+  <li><strong>Financial Forecasting:</strong> <a href="https://www.accountsiq.com/features/integrations/proforecast/">ProForecast</a></li>
+  <li><strong>Invoicing:</strong> <a href="https://www.accountsiq.com/features/integrations/chaser/">Chaser</a>, <a href="https://www.accountsiq.com/features/integrations/icompleat/">iCompleat</a></li>
+  <li><strong>Management:</strong> <a href="https://www.accountsiq.com/features/integrations/brightpay/">BrightPay</a>, <a href="https://www.accountsiq.com/features/integrations/fourth/">Fourth</a>, <a href="https://www.accountsiq.com/features/integrations/brightpay/">Rapport3</a>, <a href="https://www.accountsiq.com/features/integrations/joblogic-integration/">Joblogic</a>, <a href="https://www.accountsiq.com/features/integrations/marketman/">MarketMan</a>, <a href="https://www.accountsiq.com/features/integrations/cmap/">CMap</a>, <a href="https://www.accountsiq.com/features/integrations/cch-pm/">CCH PM</a></li>
+  <li><strong>Online payment:</strong> <a href="https://www.accountsiq.com/features/integrations/fusebill/">Fusebill</a>, <a href="https://www.accountsiq.com/features/integrations/lightyear/">Lightyear</a>, <a href="https://www.accountsiq.com/features/integrations/stripe-payments/">Stripe</a>, <a href="https://www.accountsiq.com/features/integrations/transfermate/">TransferMate</a>, <a href="https://www.accountsiq.com/features/integrations/smartdebit/">SmartDebit</a>, <a href="https://www.accountsiq.com/features/integrations/plaid-integration/">Plaid</a></li>
+  <li><strong>School administration:</strong> <a href="https://www.accountsiq.com/features/integrations/isams/">iSAMS</a></li>
+  <li><strong>Training:</strong> <a href="https://www.accountsiq.com/arlo-training-management-system/">Arlo</a></li>
+</ul>
+
+<p><strong>See:</strong> <a href="https://www.accountsiq.com/features/integrations/software-integration-partner/">ERP Software Integration Partners</a></p>
+
+<h2 id="integration-partner-workflow">Integration Partner Workflow</h2>
+<p>Using a predefined set of methods, integration partnersâ€¯can send a data package to multiple customer databases within AIQ.</p>
+
+<p>If you are an integration partner, the workflow is as follows:</p>
+<ol>
+  <li>You must set up a Sandbox environment before you can begin developing with the AIQ API.</li>
+  <li>You will receive an encrypted partner key from AIQ as well as a customer key identifying the AIQ customer database(s). You must submit these keys with each data transfer request.</li>
+  <li>Submit a HTTPS request, supplying the two authentication keys along with the relevant parameters.</li>
+  <li>The API validates this request and responds with either a success or failure notification. If successful, the relevant data is immediately imported from their application into the tables of the AIQ customer database or imported from AccountsIQ for display or reporting within their own application, for example, stock or customer balance data. If the validation fails, a message will indicate the cause.</li>
+</ol>
+
+<p><strong>See:</strong> <a href="/pages/authentication/">Authentication</a></p>
+
+<h2 id="custom-integration">Custom Integration</h2>
+<p>With our open API, we can create custom integrations for your existing systems. If you are interested in custom integrations, please contact our team at <a href="mailto:sales@accountsIQ.com">sales@accountsIQ.com</a> or <a href="mailto:support@accountsIQ.com">support@accountsIQ.com</a>.</p>
+
+<h3 id="learn-more">Learn More:</h3>
+<ul>
+  <li><a href="/index/">About our API</a></li>
+  <li><a href="/pages/advantages/">Key Advantages of APIs</a></li>
+  <li><a href="/pages/usecases/">Business Use Cases</a></li>
+  <li><a href="/pages/datatypes/">Popular Methods</a></li>
+</ul>
+:ET

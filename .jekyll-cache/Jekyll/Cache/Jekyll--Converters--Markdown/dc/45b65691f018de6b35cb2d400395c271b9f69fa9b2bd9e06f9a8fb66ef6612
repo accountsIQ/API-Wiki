@@ -1,0 +1,116 @@
+I"<h1 id="a-z">A-Z</h1>
+
+<h2 id="a">A</h2>
+<p><strong>Allocatable Transactions:</strong>
+Transactions that are eligible for allocation.</p>
+
+<p>To cancel each other out, you must match a transaction from Column A with its equivalent from Column B:</p>
+
+<table>
+    <tr>
+        <th>A</th>
+        <th>B</th>
+    </tr>    
+    <tr>
+        <td>Sales Invoice</td>
+        <td>Sales Credit Note</td>
+    </tr>
+    <tr>
+        <td>Sales Payment (Refund)</td>
+        <td>Sales Receipt</td>
+    </tr>
+    <tr>
+        <td>Sales Debit Journal</td>
+        <td>Sales Credit Journal</td>
+    </tr>
+    <tr>
+        <td>Purchases Invoice</td>
+        <td>Purchases Credit Note</td>
+    </tr>
+    <tr>
+        <td>Purchases Receipt</td>
+        <td>Purchases Payment (Refund)</td>
+    </tr>
+    <tr>
+        <td>Purchase Credit Journal</td>
+        <td>Purchase Debit Journal</td>
+    </tr>
+</table>
+
+<h2 id="b">B</h2>
+
+<p><strong>Batch Invoice:</strong>
+A batch invoice is an invoice whose lines do not hold a reference to a stock item. This means the creation of a batch invoice does not involve stock movement / transactions. A batch invoice is directly posted to the transactions table while a Product Invoice must be posted to hit the transactions journal.</p>
+
+<p><strong>Business Documents:</strong>
+A business document is one of the following documents:</p>
+
+<ul>
+  <li>Purchases Delivery</li>
+  <li>Purchases Invoice &amp; Purchases Debit Note</li>
+  <li>Purchases Order</li>
+  <li>Sales Delivery</li>
+  <li>Sales Invoice &amp; Sales Credit Note</li>
+  <li>Sales Order</li>
+  <li>Sales Quote</li>
+</ul>
+
+<h2 id="c">C</h2>
+
+<p><strong>Customer:</strong>
+A customer organizes a regroupment of Entities. A customer can be an accountancy practice with business companies for entities, a franchisor with franchisees for entities.</p>
+
+<h2 id="e">E</h2>
+
+<p><strong>Entity:</strong>
+An entity is a representation of a client company and belongs to a customer.</p>
+
+<h2 id="p">P</h2>
+
+<p><strong>Product Invoice:</strong>
+A product invoice involves an item for each of its line. It can be created, modified and only later on posted to the transaction journal. For an invoice which does not need this workflow, please see Batch Invoice. Product invoices also support stock movements.</p>
+
+<h2 id="r">R</h2>
+
+<p><strong>Required Accounts:</strong>
+Required accounts are a set of General Ledger accounts with pre-defined functions that the system will be using. Examples of those are the sales debtors control account, FX gains &amp; losses, Open Stock, etc.</p>
+
+<p><strong>Retrospective Ageing:</strong>
+A retrospective ageing is an ageing report that enables the user to see the system in the same state as it was back at a given date: transaction appear or not according to their date and allocation are present or absent according to their date.</p>
+
+<h2 id="s">S</h2>
+
+<p><strong>Service Invoices:</strong>
+All lines in a service invoice reference services or non-stock items. Unlike a Batch Invoice it does not directly impact the ledger with monetary movements. Instead, it supports a pro-forma workflow, and can be checked prior to posting to the ledger.</p>
+
+<h2 id="t">T</h2>
+
+<p><strong>Transaction Types:</strong>
+The following transaction types exist in the AccountsIQ system:</p>
+<ul>
+  <li>BC: Bank Credit Journal</li>
+  <li>BD: Bank Debit Journal</li>
+  <li>BP: Bank Payment</li>
+  <li>BR: Bank Receipt</li>
+  <li>DP: Purchases Discount</li>
+  <li>DS: Sales Discount</li>
+  <li>GA: Accrual</li>
+  <li>GP: Prepayment</li>
+  <li>ST: Stock Transfer</li>
+  <li>GC/GD: General Journal</li>
+  <li>PC: Purchases Credit Journal</li>
+  <li>PD: Purchases Debit Journal</li>
+  <li>PI: Purchases Invoice</li>
+  <li>PN: Purchases Credit Note</li>
+  <li>PP: Purchases Payment (Refund)</li>
+  <li>PR: Purchases Receipt</li>
+  <li>PX: Purchases Currency Fluctuation</li>
+  <li>SC: Sales Credit Journal</li>
+  <li>SD: Sales Debit Journal</li>
+  <li>SI: Sales Invoice</li>
+  <li>SN: Sales Credit Note</li>
+  <li>SP: Sales Payment (Refund)</li>
+  <li>SR: Sales Receipt</li>
+  <li>SX: Sales Currency Fluctuation</li>
+</ul>
+:ET

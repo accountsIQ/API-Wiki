@@ -1,0 +1,56 @@
+I"�<h1 id="terms-of-use">Terms of Use</h1>
+
+<p>These AccountsIQ API Terms of Use (“API Terms”) set out the terms and conditions of use of the AccountsIQ API. If you want to use the AccountsIQ API for any purpose (including without limitation, in connection with an application or software program), you must first register with AccountsIQ by emailing <a href="mailto:development@accountsiq.com">development@accountsiq.com</a>.</p>
+
+<p>By submitting Your Registration to AccountsIQ and / or using AccountsIQ API, you explicitly agree to be bound by these API Terms and any revised or renewed versions thereof.</p>
+
+<p>AccountsIQ reserves the right, at its sole discretion, to refuse or reject Your Registration.</p>
+
+<p>You and AccountsIQ agree as follows:</p>
+
+<h2 id="1-license">1. License</h2>
+
+<h3 id="11">1.1.</h3>
+<p>Subject to the terms and conditions of this Agreement, AccountsIQ grants to you (and you agree to comply with) a royalty-free, fully paid up, worldwide, non-sublicensable, non-transferable, non-exclusive, limited license to: use the API solely to access data. You must obtain a license key to use the API (“API Key”). In order to obtain an API Key from AccountsIQ , you agree to provide true, current and accurate contact information and a brief description of your intended use of the API, which information AccountsIQ shall collect and use in accordance with the terms of AccountsIQ’s then-current privacy policy. You agree not to share Your API Key with any third party or use an API Key issued to a third party by AccountsIQ, and you agree to be responsible for the acts and/or omissions of any third party that uses the API Key issued to You.</p>
+
+<h3 id="12">1.2</h3>
+<p>This licence does not grant to you any right to any version enhancement, update, or guarantee the continuous availability of the AccountsIQ API or the AccountsIQ Software. AccountsIQ may revise, modify or cease to provide, require you to immediately cease using the AccountsIQ API, the AccountsIQ Software or its functionality or any part thereof, which may result in loss of compatibility, denial of access to the functionality of the AccountsIQ Software.</p>
+
+<h2 id="2">2.</h2>
+<p>For the purposes of these API Terms, “Permitted Purpose” shall mean: the purpose of developing software or code to interface and connect a software application with AccountsIQ Software, (the “Software Application”).</p>
+
+<h2 id="3">3.</h2>
+<p>Your right to use the AccountsIQ API under paragraph 1 above is subject further to Your compliance with the following:</p>
+
+<p>Your Software Application (as applicable) shall in no way and to no extent whether directly or indirectly adversely affect, impede or otherwise hinder or disrupt the functionality or performance of AccountsIQ Software or products or services provided by AccountsIQ, including without limitation, that it:</p>
+
+<ul>
+  <li>does not adversely impact the performance of using AccountsIQ Software;</li>
+  <li>does not adversely impact the stability of AccountsIQ;</li>
+  <li>does not adversely impact the behaviour of other applications using the AccountsIQ API;</li>
+  <li>does not attempt to redistribute information about the use of AccountsIQ Software or AccountsIQ services without express permission of the user;</li>
+  <li>correctly identifies itself to AccountsIQ when requesting authorisation;</li>
+  <li>does not attempt to modify the AccountsIQ Software User Interface in any way.</li>
+</ul>
+
+<p>You will at all times maintain the value and reputation of the AccountsIQ Software, AccountsIQ API and AccountsIQ brand or name, to the best of Your abilities.</p>
+
+<p>You will not use the AccountsIQ API to create a Software Application that sends unsolicited communications (whether commercial or otherwise) to any third party.</p>
+
+<p>You agree that You are solely responsible for (and that AccountsIQ has no responsibility to You or to any third party for) any services and/or products You provide through Your Software Application.</p>
+
+<h2 id="4">4.</h2>
+<p>You hereby specifically acknowledge that Your rights to use the AccountsIQ API are strictly subject to Your full compliance with these API Terms, including the following instructions related to promotion, marketing and design of Your Software Application, and any breach of any provision of these API Terms or any applicable Additional Terms shall give rise to automatic right of termination by AccountsIQ.</p>
+
+<p>In respect of the Software Application Purpose only, You may only use the following references to AccountsIQ, AccountsIQ API and AccountsIQ Software in connection with Your Software Application:</p>
+
+<ul>
+  <li>“works with AccountsIQ Software” or “works with AccountsIQ”</li>
+  <li>“uses AccountsIQ Software” or “uses AccountsIQ”</li>
+  <li>“for AccountsIQ Software” or “for AccountsIQ”</li>
+</ul>
+
+<h2 id="5">5.</h2>
+<p>You represent and warrant that You are authorised to agree to and meet with the terms and conditions of the API Terms</p>
+
+:ET

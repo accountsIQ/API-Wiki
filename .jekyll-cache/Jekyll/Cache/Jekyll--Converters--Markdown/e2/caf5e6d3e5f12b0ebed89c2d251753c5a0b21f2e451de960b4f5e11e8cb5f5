@@ -1,0 +1,43 @@
+I" 
+<h1 id="about-our-api">About our API</h1>
+
+<h2 id="introduction-to-apis">Introduction to APIs</h2>
+<p>APIs are digital interfaces that allow disparate systems to communicate with each other. By integrating APIs into your business practice, you can tie together otherwise divergent business processes.</p>
+
+<p>APIs offer great flexibility in how you exchange data between systems, so you can tailor solutions to meet your specific business needs. Integrate AIQ with a third-party system to automatically send and retrieve the types of data most relevant to you.</p>
+
+<p>Take full advantage of the data accessibility that AIQ cloud-accounting offers. Because we maintain your data on our servers, it is continuously accessible to you over the internet. Take advantage of this data accessibility by integrating with our web service API.</p>
+
+<h2 id="availability">Availability</h2>
+<p>All AIQ editions have access to our API without restriction.</p>
+
+<h2 id="types-of-integartions">Types of Integartions</h2>
+<p>AIQ offers a range of partner integrations to meet your needs. Alternatively, you can have our team custom design a solution for you or develop one independently.</p>
+
+<p><strong>See:</strong> <a href="/pages/integration/">Integrate with AIQ</a></p>
+
+<h2 id="exposed-data">Exposed Data</h2>
+<p>The API allows you to access most entity level data. You cannot access customer (practice) level data.
+If you are interested in data that our API has not yet exposed, please contact us at <a href="mailto:integration@accountsiq.com">integration@accountsiq.com</a> and we will take your suggestions into consideration.</p>
+
+<h2 id="compatability">Compatability</h2>
+<p>The AccountsIQ system evolves constantly and so does its API. To avoid incompatibilities with our integrator partner applications, we make backward compatible changes. We also offer a mailing list where developers can receive information on the latest bug fixes as well as new methods.</p>
+
+<p><strong>See:</strong> <a href="https://github.com/accountsIQ/API-Wiki/wiki/AccountsIQ-SOAP-API-Update-Bulletins">SOAP API Update Bulletin</a></p>
+
+<h2 id="feedback-and-support">Feedback and support</h2>
+<p>For clarification on any aspects of this API, contact either:</p>
+<ul>
+  <li><a href="mailto:integration@accountsiq.com">integration@accountsiq.com</a></li>
+  <li><a href="mailto:development@accountsiq.com">development@accountsiq.com</a></li>
+</ul>
+
+<h3 id="learn-more">Learn More:</h3>
+<ul>
+  <li><a href="/pages/advantages/">Key Advantages of APIs</a></li>
+  <li><a href="/pages/integration/">Integrate with AIQ</a></li>
+  <li><a href="/pages/usecases/">Business Use Cases</a></li>
+  <li><a href="/pages/datatypes/">Popular Methods</a></li>
+</ul>
+
+:ET

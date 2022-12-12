@@ -1,0 +1,38 @@
+<script>
+
+var headings = document.querySelectorAll("h2");
+var tocList = document.createElement('ul');
+
+for(let i = 0, len = headings.length; i < len; i++) {
+    var heading = headings[i];
+}
+
+for(let i = 0; i < headings.length; i++) {
+    var heading = headings[i];
+
+    // Create the `li` and `a` elements
+    var li = document.createElement('li');
+    var a = document.createElement('a');
+  
+    // Set the necessary properties on the `a` element
+    a.href = '#' + heading.id;
+    a.textContent = heading.textContent;
+    a.rel = 'internal';
+
+    // Append the `a` element to the `li`
+    li.appendChild(a);
+
+    // Append the `li` to the `tocList` (an `ol` element)
+    tocList.appendChild(li);
+}
+
+console.log(tocList);
+
+var toc = document.querySelector('.in-this-article');
+console.log(toc);
+toc.appendChild(tocList);
+var tocHeading = document.createElement('h3');
+tocHeading.textContent = 'Table of Contents';
+toc.insertBefore(tocHeading, tocList);
+
+</script>

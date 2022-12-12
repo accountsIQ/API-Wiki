@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <title>AccountsIQ API</title>
+      <script src="https://kit.fontawesome.com/75a3ff46b4.js" crossorigin="anonymous"></script>
+   </head>
+   <body>  
+         <nav class="sidenav">
+            <ul class="nav-contents">
+            {% if site.data.navigation.docs[0] %}
+               {% for item in site.data.navigation.docs %}
+
+                  <div class=dropdown> 
+                     <li class="button-link">
+                           <button class="button-text">
+                              <div class="button-text-left">
+                              <i class="{{ item.class }}"></i>
+                                 <span class="dropdown-title" >{{item.page }}</span>
+                              </div>
+                                 <i class="{{ item.caret }}"></i>
+                           </button>
+                     </li>
+                  </div>
+
+                     {% if item.subfolderitems[0] %}
+                        <ul class="subnav-contents">
+                           {% for entry in item.subfolderitems %}
+                              <div class=sub-dropdown>
+                                 <li class="subnav-link">
+                                    <a href="{{ entry.url }}">
+                                       <span class="subnav-text"> {{ entry.page }}</span> 
+                                    </a>
+
+
+                                 {% if entry.subsubfolderitems[0] %}
+                                    <ul class="sub-subnav-contents">
+                                       {% for subentry in entry.subsubfolderitems %}
+                                          <li class="sub-subnav-link">
+                                             <a href="{{ subentry.url }}" >
+                                                <span class="sub-subnav-text"> {{ subentry.page }}</span>
+                                             </a>  
+                                          </li>
+                                    {% endfor %}
+                                    </ul>
+                                 {% endif %}
+                                 </li>
+                           </div>
+                           {% endfor %}
+                        </ul>
+                     {% endif %}
+                  {% endfor %}
+               {% endif %}
+            </ul>
+         </nav>   
+   </body>
+</html>
+
+
+
+<script>
+   ////DROPDOWN////
+
+let dropdown = document.getElementsByClassName("dropdown");
+
+for (let i = 0; i < dropdown.length; i++) {
+  dropdown[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    let dropdownContent = this.nextElementSibling;
+    if (dropdownContent.style.display === "block") {
+      dropdownContent.style.display = "none";
+    } else {
+      dropdownContent.style.display = "block";
+    }
+  });
+}
+
+
+let sublinks = document.getElementsByClassName("subnav-link");
+
+for (let i = 0; i < sublinks.length; i++){
+      sublinks[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+   });
+}
+
+
+  
+</script>
