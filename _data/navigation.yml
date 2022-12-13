@@ -7,40 +7,40 @@ docs:
       - page: About our API
         url: index.html
       - page: Key Advantages
-        url: /API-Wiki/advantages.html       
+        url: /advantages.html       
       - page: Integrate with AIQ
-        url: /API-Wiki/integration.html          
+        url: /integration.html          
       - page: Business Use Cases
-        url: /API-Wiki/usecases.html
+        url: /usecases.html
       - page: Popular Methods 
-        url: /API-Wiki/datatypes.html 
+        url: /datatypes.html 
   - page: Developing
     class: fa-solid fa-code-branch
     caret: fa-solid fa-caret-down      
     subfolderitems:
       - page: Specifications
-        url: /API-Wiki/specifications.html
+        url: /specifications.html
       - page: Guidelines
-        url: /API-Wiki/guidelines.html        
+        url: /guidelines.html        
       - page: Authentication
-        url: /API-Wiki/authentication.html
+        url: /authentication.html
       - page: Troubleshooting
-        url: /API-Wiki/troubleshooting.html             
+        url: /troubleshooting.html             
   - page: API Reference
     class: fa-solid fa-gear
     caret: fa-solid fa-caret-down
     subfolderitems:
       - page: Reference
-        url: /API-Wiki/reference.html
+        url: /reference.html
   - page: Glossary
     class: fa-solid fa-magnifying-glass
     caret: fa-solid fa-caret-down
     subfolderitems:
       - page: A-Z
-        url: /API-Wiki/a-z.html
+        url: /a-z.html
   - page: Terms of Use
     class: fa-solid fa-copyright
     caret: fa-solid fa-caret-down
     subfolderitems:
       - page: Terms of Use
-        url: /API-Wiki/termsofuse.html
+        url: /termsofuse.html
