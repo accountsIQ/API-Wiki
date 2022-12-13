@@ -1,7 +1,7 @@
 ---
 title: Specifications
 layout: default
-permalink: /pages/specifications/
+permalink: specifications.html
 category: Developing
 ---
 

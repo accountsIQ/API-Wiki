@@ -1,6 +1,6 @@
 ---
 title: Integrating
-permalink: /pages/integration/
+permalink: integration.html
 layout: default
 category: Overview
 ---

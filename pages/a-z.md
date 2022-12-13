@@ -1,7 +1,7 @@
 ---
 title: A-Z
 layout: default
-permalink: a-z/
+permalink: a-z.html
 category: Glossary
 ---
 # A-Z

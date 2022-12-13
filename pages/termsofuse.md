@@ -1,7 +1,7 @@
 ---
 title: Terms of Use
 layout: default
-permalink: /pages/termsofuse/
+permalink: termsofuse.html
 category: Legal
 ---
 

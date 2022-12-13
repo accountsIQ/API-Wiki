@@ -5,42 +5,42 @@ docs:
     caret: fa-solid fa-caret-down
     subfolderitems:
       - page: About our API
-        url: /index/
+        url: index.html
       - page: Key Advantages
-        url: /pages/advantages/         
+        url: /advantages.html       
       - page: Integrate with AIQ
-        url: /pages/integration/          
+        url: /integration.html          
       - page: Business Use Cases
-        url: /pages/usecases/
+        url: /usecases.html
       - page: Popular Methods 
-        url: /pages/datatypes/  
+        url: /datatypes.html 
   - page: Developing
     class: fa-solid fa-code-branch
     caret: fa-solid fa-caret-down      
     subfolderitems:
       - page: Specifications
-        url: /pages/specifications/
+        url: /specifications.html
       - page: Guidelines
-        url: /pages/guidelines/        
+        url: /guidelines.html        
       - page: Authentication
-        url: /pages/authentication/
+        url: /authentication.html
       - page: Troubleshooting
-        url: /pages/troubleshooting/              
+        url: /troubleshooting.html             
   - page: API Reference
     class: fa-solid fa-gear
     caret: fa-solid fa-caret-down
     subfolderitems:
       - page: Reference
-        url: /pages/reference/ 
+        url: /reference.html
   - page: Glossary
     class: fa-solid fa-magnifying-glass
     caret: fa-solid fa-caret-down
     subfolderitems:
       - page: A-Z
-        url: /a-z/
+        url: /a-z.html
   - page: Terms of Use
     class: fa-solid fa-copyright
     caret: fa-solid fa-caret-down
     subfolderitems:
       - page: Terms of Use
-        url: /pages/termsofuse/
+        url: /termsofuse.html
