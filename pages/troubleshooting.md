@@ -1,7 +1,7 @@
 ---
 title: Troubleshooting
 layout: default
-permalink: pages/troubleshooting/
+permalink: /pages/troubleshooting/
 category: Developing
 ---
 
