@@ -32,6 +32,6 @@ Your AIQ administrator will let you know which `{regioncode}` to use. If you sti
 When using the WSDL file, it is recommended to refresh the file. However, as we only make backward compatible changes, this is not mandatory.
 
 ### See More:
-- [Guidelines](/pages/guidelines/)
-- [Authentication](/pages/authentication/)
-- [Troubleshooting](/pages/troubleshooting/)
+- [Guidelines](/guidelines.html)
+- [Authentication](/authentication.html)
+- [Troubleshooting](/troubleshooting.html)

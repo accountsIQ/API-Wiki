@@ -30,10 +30,10 @@ Your developers don’t have to build a solution from scratch. Instead, they can
 Let our API handle complexity in the background instead of your developers creating overly complex products, with features that slow them down. The results will also be far easier to maintain as your developers don't have to maintain updates. Any improvements we make will be passed on to you.
 
 ### Learn More:
-- [About our API](/index/)
-- [Integrate with AIQ](/pages/integration/)
-- [Business Use Cases](/pages/usecases/)
-- [Popular Methods](/pages/datatypes/)
+- [About our API](/index.html)
+- [Integrate with AIQ](/integration.html)
+- [Business Use Cases](/usecases.html)
+- [Popular Methods](/datatypes.html)
 
 
 

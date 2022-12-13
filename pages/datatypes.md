@@ -36,7 +36,7 @@ In other cases, `PostPayAndAllocateSalesInvoices` creates all these operations w
 When loading transactions, the `GetTransactionsByExternalReference` method ensures that the same data has not been loaded twice by ensuring that the transaction does not already exist in the system. This can happen when a client mistakenly uploads the same file again. 
 
 ### See More:
-- [About our API](/index/)
-- [Key Advantages of APIs](/pages/advantages/)
-- [Integrate with AIQ](/pages/integration/)
-- [Business Use Cases](/pages/usecases/)
+- [About our API](/index.html)
+- [Key Advantages of APIs](/advantages.html)
+- [Integrate with AIQ](/integration.html)
+- [Business Use Cases](/usecases.html)

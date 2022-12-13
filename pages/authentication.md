@@ -55,7 +55,7 @@ Confirm the following:
 - Your authentication keys are correct. If you copied your keys from an email, you have not accidently copied line endings or blank spaces.
 
 ### See More:
-- [Specifications](/pages/specifications/)
-- [Guidelines](/pages/guidelines/)
-- [Troubleshooting](/pages/troubleshooting/)
+- [Specifications](/specifications.html)
+- [Guidelines](/guidelines.html)
+- [Troubleshooting](/troubleshooting.html)
 
