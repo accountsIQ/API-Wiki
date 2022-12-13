@@ -1,7 +1,7 @@
 ---
 title: A-Z
 layout: default
-permalink: pages/a-z/
+permalink: /pages/a-z/
 category: Glossary
 ---
 # A-Z
