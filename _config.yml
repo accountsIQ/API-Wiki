@@ -31,10 +31,6 @@ theme: jekyll-theme-cayman
 plugins:
   - jekyll-feed
 
-defaults:
-  scope:
-    path: " "
-    type: "pages"
 
 # Exclude from processing.
 # The following items will not be processed, by default.
