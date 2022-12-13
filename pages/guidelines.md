@@ -1,7 +1,7 @@
 ---
 title: Guidelines
 layout: default
-permalink: pages/guidelines/
+permalink: /pages/guidelines/
 category: Developing
 ---
 # Development Guidelines
