@@ -35,13 +35,13 @@ If you are an integration partner, the workflow is as follows:
 3. Submit a HTTPS request, supplying the two authentication keys along with the relevant parameters. 
 4. The API validates this request and responds with either a success or failure notification. If successful, the relevant data is immediately imported from their application into the tables of the AIQ customer database or imported from AccountsIQ for display or reporting within their own application, for example, stock or customer balance data. If the validation fails, a message will indicate the cause.
 
-**See:** [Authentication](/authentication.html)
+**See:** [Authentication](/AIQ-Wiki/authentication.html)
 
 ## Custom Integration
 With our open API, we can create custom integrations for your existing systems. If you are interested in custom integrations, please contact our team at [sales@accountsIQ.com](mailto:sales@accountsIQ.com) or [support@accountsIQ.com](mailto:support@accountsIQ.com).
 
 ### Learn More:
-- [About our API](/index.html)
-- [Key Advantages of APIs](/advantages.html)
-- [Business Use Cases](/usecases.html)
-- [Popular Methods](/datatypes.html)
+- [About our API](index.html)
+- [Key Advantages of APIs](/AIQ-Wiki/advantages.html)
+- [Business Use Cases](/AIQ-Wiki/usecases.html)
+- [Popular Methods](/AIQ-Wiki/datatypes.html)

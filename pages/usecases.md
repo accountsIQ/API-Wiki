@@ -51,7 +51,7 @@ Data can flow between systems, so you always have the most up-to-data data avail
 The integration between AccountsIQ and [Joblogic](https://www.accountsiq.com/features/integrations/joblogic-integration/) allows an easier and more efficient way to manage finances, combining the benefits of both an accounting system and a powerful service management software.
 
 ### See More:
-- [About our API](/index.html)
-- [Key Advantages of APIs](/usecases.html)
-- [Integrate with AIQ](/integration.html)
-- [Popular Methods](/datatypes.html)
+- [About our API](index.html)
+- [Key Advantages of APIs](/AIQ-Wiki/usecases.html)
+- [Integrate with AIQ](/AIQ-Wiki/integration.html)
+- [Popular Methods](/AIQ-Wiki/datatypes.html)
