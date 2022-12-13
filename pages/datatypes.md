@@ -1,7 +1,7 @@
 ---
 title: Data Types
 layout: default
-permalink: pages/datatypes/
+permalink: /pages/datatypes/
 category: Overview
 ---
 # Most popular API Methods
