@@ -7,40 +7,40 @@ docs:
       - page: About our API
         url: index.html
       - page: Key Advantages
-        url: /API-Wiki/pages/advantages.html       
+        url: /API-Wiki/advantages.html       
       - page: Integrate with AIQ
-        url: /API-Wiki/pages/integration.html          
+        url: /API-Wiki/integration.html          
       - page: Business Use Cases
-        url: /API-Wiki/pages/usecases.html
+        url: /API-Wiki/usecases.html
       - page: Popular Methods 
-        url: /API-Wiki/pages/datatypes.html 
+        url: /API-Wiki/datatypes.html 
   - page: Developing
     class: fa-solid fa-code-branch
     caret: fa-solid fa-caret-down      
     subfolderitems:
       - page: Specifications
-        url: /API-Wiki/pages/specifications.html
+        url: /API-Wiki/specifications.html
       - page: Guidelines
-        url: /API-Wiki/pages/guidelines.html        
+        url: /API-Wiki/guidelines.html        
       - page: Authentication
-        url: /API-Wiki/pages/authentication.html
+        url: /API-Wiki/authentication.html
       - page: Troubleshooting
-        url: /API-Wiki/pages/troubleshooting.html             
+        url: /API-Wiki/troubleshooting.html             
   - page: API Reference
     class: fa-solid fa-gear
     caret: fa-solid fa-caret-down
     subfolderitems:
       - page: Reference
-        url: /API-Wiki/pages/reference.html
+        url: /API-Wiki/reference.html
   - page: Glossary
     class: fa-solid fa-magnifying-glass
     caret: fa-solid fa-caret-down
     subfolderitems:
       - page: A-Z
-        url: /API-Wiki/pages/a-z.html
+        url: /API-Wiki/a-z.html
   - page: Terms of Use
     class: fa-solid fa-copyright
     caret: fa-solid fa-caret-down
     subfolderitems:
       - page: Terms of Use
-        url: /API-Wiki/pages/termsofuse.html
+        url: /API-Wiki/termsofuse.html
