@@ -22,7 +22,7 @@ All AIQ editions have access to our API without restriction.
 ## Types of Integrations
 AIQ offers a range of partner integrations to meet your needs. Alternatively, you can have our team custom design a solution for you or develop one independently.
 
-**See:** [Integrate with AIQ](/integration.html)
+**See:** [Integrate with AIQ](/AIQ-Wiki/integration.html)
 
 ## Exposed Data
 The API allows you to access most entity level data. You cannot access customer (practice) level data.
@@ -37,10 +37,10 @@ The AccountsIQ system evolves constantly and so does its API. To avoid incompati
 For clarification on any aspects of this API, contact [integration@accountsiq.com](mailto:integration@accountsiq.com).
 
 ### Learn More:
-- [Key Advantages of APIs](/advantages.html)
-- [Integrate with AIQ](/integration.html)
-- [Business Use Cases](/usecases.html)
-- [Popular Methods](/datatypes.html)
+- [Key Advantages of APIs](/AIQ-Wiki/advantages.html)
+- [Integrate with AIQ](/AIQ-Wiki/integration.html)
+- [Business Use Cases](/AIQ-Wiki/usecases.html)
+- [Popular Methods](/AIQ-Wiki/datatypes.html)
 
 
 

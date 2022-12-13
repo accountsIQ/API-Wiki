@@ -39,6 +39,6 @@ If you are not in a staging environment:
 - Allow for the user to select the correct region and change the endpoint URL accordingly.
 
 ### See More:
-- [Specifications](/AIQ-Wiki/specifications.html)
-- [Authentication](/AIQ-Wiki/authentication.html)
-- [Troubleshooting](/AIQ-Wiki/troubleshooting.html)
+- [Specifications](specifications.html)
+- [Authentication](authentication.html)
+- [Troubleshooting](troubleshooting.html)

@@ -52,6 +52,6 @@ The integration between AccountsIQ and [Joblogic](https://www.accountsiq.com/fea
 
 ### See More:
 - [About our API](index.html)
-- [Key Advantages of APIs](/AIQ-Wiki/usecases.html)
-- [Integrate with AIQ](/AIQ-Wiki/integration.html)
-- [Popular Methods](/AIQ-Wiki/datatypes.html)
+- [Key Advantages of APIs](usecases.html)
+- [Integrate with AIQ](integration.html)
+- [Popular Methods](datatypes.html)

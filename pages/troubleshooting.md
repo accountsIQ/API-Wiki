@@ -169,6 +169,6 @@ In this where the Code matches the supplier/customers `CreditTermID` you have tw
 -	whether `EndOfMonth` is set to true or false. If false then it is invoice date plus the no of days, but if `EndOfMonth` is true that is then set from the last day of the month in which the invoice date falls.
 
 ### See More:
-- [Specifications](/AIQ-Wiki/specifications.html)
-- [Guidelines](/AIQ-Wiki/guidelines.html)
-- [Authentication](/AIQ-Wiki/authentication.html)
+- [Specifications](specifications.html)
+- [Guidelines](guidelines.html)
+- [Authentication](authentication.html)

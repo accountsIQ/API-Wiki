@@ -25,7 +25,7 @@ When the token expires, the API will return a flag indicating this. To get a new
 
 ## Integrator Partner Security
 
-Before using the API, please read and acknowledge the [Terms of Use](/AIQ-Wiki/pages/termsofuse/) to [integration@accountsiq.com ](mailto:integration@accountsiq.com).
+Before using the API, please read and acknowledge the [Terms of Use](termsofuse.md) to [integration@accountsiq.com ](mailto:integration@accountsiq.com).
 
 The integrator partner key is a sensitive piece of information and must be treated as such. The integrator is responsible for the use of their key. Keep it secure at all times, ensuring it is inaccessible via reverse engineering or any other method.
 
@@ -55,7 +55,7 @@ Confirm the following:
 - Your authentication keys are correct. If you copied your keys from an email, you have not accidently copied line endings or blank spaces.
 
 ### See More:
-- [Specifications](/AIQ-Wiki/specifications.html)
-- [Guidelines](/AIQ-Wiki/guidelines.html)
-- [Troubleshooting](/AIQ-Wiki/troubleshooting.html)
+- [Specifications](specifications.html)
+- [Guidelines](guidelines.html)
+- [Troubleshooting](troubleshooting.html)
 
