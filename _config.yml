@@ -21,8 +21,8 @@
 title: AccountsIQ API
 email: your-email@example.com
 description: Discover our API
-baseurl: "/API-Wiki" # the subpath of your site, e.g. /blog, comment out if hosting on github
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+#baseurl: "" # the subpath of your site, e.g. /blog, comment out if hosting on github
+url: "https://accountsiq.github.io/API-Wiki" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username:  jekyll
 
