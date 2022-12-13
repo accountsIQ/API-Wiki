@@ -1,7 +1,7 @@
 ---
 title: Benefits
 layout: default
-permalink: pages/usecases/
+permalink: /pages/usecases/
 category: Overview
 ---
 
