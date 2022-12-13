@@ -1,7 +1,7 @@
 ---
 title: Key Advantages of APIs
 layout: default
-permalink: pages/advantages/
+permalink: /pages/advantages/
 category: Overview
 ---
 
