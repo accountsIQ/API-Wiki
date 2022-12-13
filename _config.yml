@@ -21,7 +21,7 @@
 title: AccountsIQ API
 email: your-email@example.com
 description: Discover our API
-#baseurl: "" # the subpath of your site, e.g. /blog, comment out if hosting on github
+baseurl: "" # the subpath of your site, e.g. /blog, comment out if hosting on github
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username:  jekyll
