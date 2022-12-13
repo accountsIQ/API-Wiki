@@ -1,7 +1,7 @@
 ---
 title: Authentication
 layout: default
-permalink: pages/authentication/
+permalink: /pages/authentication/
 category: Developing
 ---
 
