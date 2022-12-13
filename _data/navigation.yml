@@ -37,7 +37,7 @@ docs:
     caret: fa-solid fa-caret-down
     subfolderitems:
       - page: A-Z
-        url: /pages/a-z/
+        url: /a-z/
   - page: Terms of Use
     class: fa-solid fa-copyright
     caret: fa-solid fa-caret-down
