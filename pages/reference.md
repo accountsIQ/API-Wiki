@@ -1,7 +1,7 @@
 ---
 title: Reference
 layout: default
-permalink: pages/reference/
+permalink: /pages/reference/
 category: Reference
 ---
 ## Methods
