@@ -331,7 +331,7 @@ a:hover .bars .bar {
 .in-this-article li {
   line-height: 1.75rem;
 }
-//===========================================tables/code-block/figures========================================================
+//===========================================tables/figures========================================================
 .table-container {
   max-width: 600px;
   overflow-x: auto;
@@ -342,13 +342,59 @@ th {
 td {
   font-weight: 300;
 }
-.language-plaintext {
-  max-width: 600px;
-}
 figure {
   margin-left: 0;
   margin-right: 0;
 }
+
+//==============================================codeblocks======================================================
+
+.language-plaintext {
+  position: relative;
+}
+.language-plaintext div .highlight {
+  padding-top: 3rem;
+}
+.highlight {
+  max-width: 600px; 
+}
+.clipboard-button {
+  background: none;
+  display: flex;
+  justify-content: flex-end;
+  border: none;
+  position: absolute;
+  top: 0.5rem;
+  right:1.5rem;
+}
+.fa-clipboard,
+.fa-check {
+  font-size: 1.25rem;
+  opacity: 0.8; 
+  border:0.5px solid #b5b9c0;
+  border-radius: 3.5px;
+  padding: 0.5rem;  
+}
+.fa-clipboard {
+  color: #6a6d71;
+}
+.fa-clipboard:hover {
+  transition: 800ms linear; 
+  transform: scale(1.1);
+  color: #425eff;
+  animation: 1s ease-in-out;
+}
+.fa-check {
+  color: #425eff;
+}
+.fa-check:hover {
+  transition: 1000ms linear; 
+  transform: scale(1.1);
+  animation: 1s ease-out;
+}
+
+
+
 //==============================================definition-lists===============================================
 dt {
   font-weight: 500;

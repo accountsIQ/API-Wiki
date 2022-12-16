@@ -10,6 +10,10 @@
     <meta name="theme-color" content="#157878">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+    <link rel="stylesheet" href= "{{ '/assets/css/syntax.min.css?v=' | append: site.github.build_revision | relative_url }}">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script>hljs.highlightAll();</script> 
     <script src="https://kit.fontawesome.com/75a3ff46b4.js" crossorigin="anonymous"></script>
     {% include head-custom.html %}
   </head>
@@ -91,4 +95,41 @@ window.addEventListener("resize", () => {
        navToggle.classList.remove('active')
     }    
 })
+</script>
+
+<script>
+const copyButtonLabel = " ";
+let blocks = document.querySelectorAll("pre");
+
+blocks.forEach((block) => {
+  // only add button if browser supports Clipboard API
+  if (navigator.clipboard) {
+    let button = document.createElement("button");
+    button.classList.add("clipboard-button");
+    button.innerText = copyButtonLabel;
+    let icon = document.createElement("i");
+    button.appendChild(icon);
+    icon.innerHTML = '<i class="fa-regular fa-clipboard"></i>';
+    block.appendChild(button);
+
+    button.addEventListener("click", async () => {
+      await copyCode(block, icon);
+    });
+  } 
+});
+
+async function copyCode(block, icon) {
+  let code = block.querySelector("code");
+  let text = code.innerText;
+
+  await navigator.clipboard.writeText(text);
+
+  // visual feedback that task is completed
+  icon.innerHTML = '<i class="fa-solid fa-check"></i>';
+
+  setTimeout(() => {
+    icon.innerHTML = '<i class="fa-regular fa-clipboard"></i>';
+  }, 2000);
+}
+
 </script>

@@ -120,8 +120,8 @@ There can be multiple reasons for this. Check the following:
 		      customer.Fax = "0123459";
 		      customer.Phone = "0123457";
 
-		      // This will not work because the account code was not set, and the system does not generate them
-		      // dynamically
+		      //This will not work because the account code was not set, 
+			  //and the system does not generate them dynamically.
 		      Integration_1_1.WSResult2OfBoolean result = ws.UpdateCustomer(auth, customer, true);
 		      Assert.IsNotNull(result);
 		      Assert.AreEqual(true, result.Result);
