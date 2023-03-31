@@ -10,10 +10,22 @@ docs:
         url: /API-Wiki/advantages.html      
       - page: Integrate with AIQ
         url: /API-Wiki/integration.html          
-      - page: Business Use Cases
-        url: /API-Wiki/usecases.html
       - page: Popular Methods 
         url: /API-Wiki/datatypes.html 
+  - page:  Use Cases
+    class: fa-solid fa-briefcase
+    caret: fa-solid fa-caret-down
+    subfolderitems:
+      - page: Sales Invoicing
+        url: /API-Wiki/sales.html  
+      - page: Payment Management
+        url: /API-Wiki/payment.html      
+      - page: Expenses Management
+        url: /API-Wiki/expenses.html          
+      - page: Business Analysis
+        url: /API-Wiki/analysis.html
+      - page: Payroll Management
+        url: /API-Wiki/payroll.html        
   - page: Developing
     class: fa-solid fa-code-branch
     caret: fa-solid fa-caret-down      

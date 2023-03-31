@@ -21,10 +21,12 @@ html {
 * {
   font-family: 'Sora';
 }
-a {
+a,
+a .language-plaintext {
   color: #425eff;
 }
-a:hover {
+a:hover,
+a .language-plaintext:hover {
   color: #425eff80;
   text-decoration: none;
 }
@@ -268,6 +270,7 @@ a:hover .bars .bar {
   font-size: .8rem;  
 }
 .fa-map,
+.fa-briefcase,
 .fa-code-branch,
 .fa-gear,
 .fa-magnifying-glass,

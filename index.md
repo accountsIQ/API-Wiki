@@ -39,7 +39,6 @@ For clarification on any aspects of this API, contact [integration@accountsiq.co
 ### Learn More:
 - [Key Advantages of APIs](advantages.html)
 - [Integrate with AIQ](integration.html)
-- [Business Use Cases](usecases.html)
 - [Popular Methods](datatypes.html)
 
 

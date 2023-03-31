@@ -374,9 +374,9 @@ html { scroll-behavior: smooth; }
 
 * { font-family: 'Sora'; }
 
-a { color: #425eff; }
+a, a .language-plaintext { color: #425eff; }
 
-a:hover { color: #425eff80; text-decoration: none; }
+a:hover, a .language-plaintext:hover { color: #425eff80; text-decoration: none; }
 
 body { min-width: 400px; }
 
@@ -458,7 +458,7 @@ a:hover .bars .bar { background-color: #425eff; }
 
 .sidenav i { color: #425eff80; font-size: .8rem; }
 
-.fa-map, .fa-code-branch, .fa-gear, .fa-magnifying-glass, .fa-copyright { padding-right: 1rem; }
+.fa-map, .fa-briefcase, .fa-code-branch, .fa-gear, .fa-magnifying-glass, .fa-copyright { padding-right: 1rem; }
 
 .fa-caret-down { padding-right: 0; }
 

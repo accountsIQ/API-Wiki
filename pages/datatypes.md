@@ -39,4 +39,3 @@ When loading transactions, the `GetTransactionsByExternalReference` method ensur
 - [About our API](index.html)
 - [Key Advantages of APIs](advantages.html)
 - [Integrate with AIQ](integration.html)
-- [Business Use Cases](usecases.html)
