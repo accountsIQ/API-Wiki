@@ -27,6 +27,11 @@ There are two categories of expenses that will determine which approach you take
 - **Out-of-pocket:** Use purchase invoicing. Employees must be set up as suppliers first. 
 - **Not out-of-pocket:** Use either purchase invoicing or sundry bank payments. With sundry payments you don’t have to set up employees as suppliers.
 
+>AIQ Help:
+>
+>- [How does Purchase Invoicing Work?](https://aiq.helpjuice.com/purchasing/285995-how-does-the-purchase-un-ordered-product-invoice-work?from_search=116657627)
+- [Sundry Bank Payments](https://aiq.helpjuice.com/bank-system/282176-sundry-bank-payments-incomplete?from_search=116657258)
+
 ### Using Purchase Invoicing for expenses
 First, set up your employees as suppliers.
 
@@ -47,6 +52,11 @@ The sundry bank payment is a non-supplier VAT aware transaction, so you don't ne
 - [`SaveSundryReceiptPaymentsGetBackTransactionIDs`](https://github.com/accountsIQ/API-Wiki/wiki/SaveSundryReceiptPaymentsGetBackTransactionIDs): This creates a sundry payment in an entity for the indicated bank and creates a movement between the bank and GL account.
 
 ## Using Credit Cards
+
+>AIQ Help:
+>
+>- [How Do I Manage My Employee Credit Cards and other Out-of-pocket Expenses?](https://aiq.helpjuice.com/bank-system/289778-how-do-i-manage-my-employee-credit-cards-and-other-out-of-pocket-expenses?from_search=116657785)
+
 For credit cards, set up the credit card as a supplier.
 
 - [`UpdateSupplier`](https://github.com/accountsIQ/API-Wiki/wiki/UpdateSupplier): Use this to set up the credit card as a supplier.
@@ -62,6 +72,10 @@ With prepaid cards (Pleo, Payhawk), there are no out-of-pocket expenses.
 
 ## Cross-charging and Recharging
 Cross-charging and recharging expenses can occur in multi-entity companies. 
+
+>AIQ Help:
+>
+>- [How Do I Create Inter-Company Transactions?](https://aiq.helpjuice.com/en_GB/intercompany/282303-how-do-i-create-inter-company-transactions)
 
 For example, if an employee from a UK company does business for an Irish company in the same group, expenses in Ireland would go to the UK company who would be able to claim them from the Irish company.
 

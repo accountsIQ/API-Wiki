@@ -18,9 +18,11 @@ However, if you have a payroll system and are interested in integrating it with 
 ## Using GL Journals for Payroll
 Payrolls are effectively a monthly journal. Create a GL Journal with the relevant transactions.
 
+>AIQ Help:
+>
+>- [Reusing Journals for Wages and Salaries](https://aiq.helpjuice.com/en_GB/general-ledger/289604-how-do-i-use-the-journal-template-feature-example-wages-and-salaries)
+
 Ordinarily, journals are not related to employee salaries as it is all done in summary, with net pay, gross pay, pension contributions and so on. 
 
-- [`GetGLDefaults`](https://github.com/accountsIQ/API-Wiki/wiki/GetGLDefaults): This returns all defaults to create a new GL account if you do not have one set up already.
-- [`SaveGLDefaults`](https://github.com/accountsIQ/API-Wiki/wiki/SaveGLDefaults): This saves updates to the GL defaults if you need to make any.
 - [`CreateGeneralJournalGetBackTransactionID`](https://github.com/accountsIQ/API-Wiki/wiki/CreateGeneralJournalGetBackTransactionID): Create a multiline journal with your GL account codes and BI codes.This will also post it to the transaction table and return the ID of the newly created transaction. 
 

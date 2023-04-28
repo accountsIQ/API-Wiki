@@ -31,6 +31,19 @@ a .language-plaintext:hover {
   text-decoration: none;
 }
 
+.main-content blockquote {
+  border-left-color: #425eff80;
+  background-color: #eef1fe;
+  color:#162c5e;
+  font-weight: 300;
+  padding: 1rem;
+  font-size: 0.95rem;
+}
+
+img {
+  padding-top: 0.5rem;
+}
+
 //=======================================layout============================================================
 body {
   min-width: 400px;

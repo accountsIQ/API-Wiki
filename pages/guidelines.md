@@ -12,7 +12,7 @@ Before you begin developing with AIQ API, you need access to the following:
 - **Credentials:** This consist of two tokens. AIQ provides a partner token. A user generates a user token within the live company which developers can use to impersonate them.
 
 ## Client Libraries
-Currently, we do not offer client libraries. We can, however, make available a Postman collection with sample requests. We also have a sample C# project that we can provide on request.
+Currently, we do not offer client libraries. We can, however, make available a [Postman collection](postman-collection.html) with sample requests. We also have a sample C# project that we can provide on request.
 
 ## Sample API Requests 
 View a library of XML samples of API requests and responses: [Integration_1_1 Web Service](https://uk1.accountsiq.com/system/dashboard/integration/integration_1_1.asmx).
@@ -25,10 +25,10 @@ The simplest way to integrate using PHP is to:
 2.	Next, you should be able to generate a set of classes by pointing it to the Staging Environment.
 3.	Finally, require_once the generated include PHP files and follow the C# examples.
 
-If you require further assistance, please send a mail to [integration@accountsiq.com ](mailto:integration@accountsiq.com).
+If you require further assistance, please email [integration@accountsiq.com ](mailto:integration@accountsiq.com).
 
 ## Clearing Testing Data
-If you have created testing data in the system and want to clear it for retesting, email integration@accountsiq.com specifying what you want done to which company.
+If you have created testing data in the system and want to clear it for retesting, email [integration@accountsiq.com ](mailto:integration@accountsiq.com) specifying what you want done to which company.
 
 ## Going Live
 If you have finished developing the integration link and want to go live:

@@ -26,6 +26,10 @@ If you are interested in any of these solutions, please contact us at [sales@acc
 ## The Payment Process
 The following can be used to identify a customer invoice, create a receipt from that invoice, and then allocate the invoice and receipt against each other.
 
+>AIQ Help:
+>
+>- [How do I Process Sales Receipts and Allocations?](https://aiq.helpjuice.com/sales-system/-how-do-i-process-sales-receipts-and-allocation?from_search=116656252)
+
 ### Identifying Invoices
 - [`GetTransaction`](https://github.com/accountsIQ/API-Wiki/wiki/GetTransaction): This retrieves an existing transaction from the system by its unique transaction identifier.
 - [`GetInvoicesBy`](https://github.com/accountsIQ/API-Wiki/wiki/GetInvoicesBy): This can filter invoices by a range of parameters.
@@ -46,11 +50,18 @@ Credits and debits are used as part of any sales or purchasing integration becau
 
 As you cannot cancel posted transactions in AccountsIQ, you must use credit and debit notes for a cancelling effect. 
 
+>AIQ Help:
+>
+>- [Sales Debit and Credit Journals](https://aiq.helpjuice.com/sales-system/282189-sales-journals-incomplete?from_search=116656588)
+- [Customer and Supplier Refunds](https://aiq.helpjuice.com/purchasing/customer-and-supplier-refunds?from_search=116656849)
+
+
 ### Using Credit Notes
 This process involves copying the invoice, turning it into a credit note, saving it, and then allocating it to the invoice.
 
 - [`GetNewSalesCreditNote`](https://github.com/accountsIQ/API-Wiki/wiki/GetNewSalesCreditNote): This creates a new credit note based on the customer’s account defaults.
 - [`SaveCreditNote`](https://github.com/accountsIQ/API-Wiki/wiki/SaveCreditNote): This saves a modified credit note.
+- [`PostCreditNotesGetBackTransactionIDs`](https://github.com/accountsIQ/API-Wiki/wiki/PostCreditNotesGetBackTransactionIDs): This posts existing credit notes to the transaction table and returns their unique transaction IDs.
 - [`GetInvoice`](https://github.com/accountsIQ/API-Wiki/wiki/GetInvoice): This returns an invoice given its unique identifier.
 - [`GetCreditNote`](https://github.com/accountsIQ/API-Wiki/wiki/GetCreditNote): Retrieve the credit note given its unique identifier.
 - [`AllocateTransactions`](https://github.com/accountsIQ/API-Wiki/wiki/AllocateTransactions): This allocates the credit note and invoice against each other. 

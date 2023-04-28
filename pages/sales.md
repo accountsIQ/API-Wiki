@@ -57,15 +57,23 @@ Use endpoints that return transaction IDs where possible. Recording the transact
 Once the transaction ID is recorded in the third-party system, you cannot modify that invoice, or the systems will be out of sync.
 
 ### Batch Invoices
-We recommend creating batch transactions where possible as this cuts down significantly on API calls. Batch transactions go straight to the transactions table rather than going to the invoice table first. 
+Batch invoices go straight to the transaction tables rather than going to the invoice table first, making them slightly faster than item invoices. 
 
-Batch invoicing is also recommended if you follow VAT calculations from another system, as it avoids the slight rounding that can occur with item invoices.
+> AIQ Help:
+> 
+> - [How does Batch Sales Invoicing work?](https://aiq.helpjuice.com/sales-system/283452-how-does-batch-invoicing-work?from_search=116655046)
+
+Batch invoicing is recommended if you follow VAT calculations from another system, as it avoids the slight rounding that can occur with item invoices.
 
 - [`GetNewBatchSalesInvoice`](https://github.com/accountsIQ/API-Wiki/wiki/GetNewBatchSalesInvoice):  This creates a new unposted batch invoice with the customer’s defaults. You cannot edit batch invoices. 
 - [`CreateBatchSalesInvoiceGetBackTransactionID`](https://github.com/accountsIQ/API-Wiki/wiki/CreateBatchSalesInvoiceGetBackTransactionID): After creating a batch, use this to post it. 
   
 ### Item Invoices
 Use item invoicing if you need extra header details, such as order numbers, delivery dates, line notes, or item codes. Item codes can be useful as they let you store defaults against them.
+
+>AIQ Help:
+>
+>- [Sales Item Invoices](https://aiq.helpjuice.com/sales-system/642689-sales-item-invoices-credit-note?from_search=116660221)
 
 - [`GetNewSalesInvoice`](https://github.com/accountsIQ/API-Wiki/wiki/GetNewSalesInvoice): The first gives you with a new template invoice with the defaults of the customer code you provided. You can then modify data and create invoice lines. 
 - [`SaveInvoiceGetBackInvoiceID`](https://github.com/accountsIQ/API-Wiki/wiki/SaveInvoiceGetBackInvoiceID): This saves the invoice and returns the transaction ID. However, it has not been posted yet.
@@ -88,7 +96,14 @@ For example, an employment agency could raise:
 ### Use BI Codes
 If your invoicing requires complex transactions, BI codes (called Departments in the API) can help manage this process. Setting up and managing complex BI structures via the API is much more manageable than doing it manually. 
 
+> AIQ Help:
+> 
+> - [How do I Implement Extended Business Analysis?](https://aiq.helpjuice.com/en_GB/analysis/289280-how-do-i-implement-extended-business-analysis)
+> - [Extended Business Analysis for Job or Project Analysis](https://aiq.helpjuice.com/en_GB/analysis/289415-how-do-i-implement-job-or-project-analysis-using-extended-business-analysis)
+
 BI Codes can have up to six BI dimensions, each with as many elements as needed. They can be based on data from the customer, item code, a third-party system, or a combination.  
+
+BI Codes are linked to transaction lines which in turn link them to dimensions and analysis codes via the BI Setup. This underpins all advanced reporting in the system.
 
 If a third-party system doesn’t have a GL code to post from, use non-stock items to set default BI and GL codes, even if you don’t use them on the invoice.
 
@@ -101,17 +116,23 @@ If a third-party system doesn’t have a GL code to post from, use non-stock ite
 ## Deferred Revenue
 Deferred revenue refers to when a company bills a customer in full but wants to record the revenue over multiple periods. When the company receives the revenue in one go, they can split it into twelve parts to account for it being earned over the course of the year.
 
+>AIQ Help:
+>
+>- [General Ledger Deferred Revenue Postings and Spreadings](https://aiq.helpjuice.com/general-ledger/335271-general-ledger-deferred-revue-postings?from_search=116655309)
+
 ### Use a Deferred Revenue Journal
 Deferred revenue can be accounted for with a deferred revenue journal. 
 
 First, create a standard invoice for the full amount with today’s date (see _Standard Invoicing_, above). Then post it to a reserved or deferred revenue journal and create twelve journal entries. To account for the income over the year, take one journal entry back each month.
 
-- [`GetGLDefaults`](https://github.com/accountsIQ/API-Wiki/wiki/GetGLDefaults): This returns all defaults to create a new GL account if you do not have one set up already.
-- [`SaveGLDefaults`](https://github.com/accountsIQ/API-Wiki/wiki/SaveGLDefaults): This saves updates to the GL defaults if you made any.
 - [`CreateGeneralJournalGetBackTransactionID`](https://github.com/accountsIQ/API-Wiki/wiki/CreateGeneralJournalGetBackTransactionID): This creates new GL journal.
 
 ## Intercompany transactions
 Intercompany transactions cannot be created automatically via the API. You must create them in two separate steps. 
+
+>AIQ Help:
+>
+>- [How do I create Inter-company Transaction?](https://aiq.helpjuice.com/intercompany/282303-how-do-i-create-inter-company-transactions?from_search=116655828)
 
 First, get a list of valid intercompany connections so you can replicate the relevant one. Then create a sales invoice in one entity and a corresponding purchase invoice in the other entity.
 

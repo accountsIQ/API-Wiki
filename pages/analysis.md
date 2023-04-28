@@ -16,7 +16,13 @@ We currently have an integration with [ProForecast](https://www.accountsiq.com/f
 If there is another system you want to integrate with, we also offer custom integrations to meet your requirements. Contact us at [sales@accountsIQ.com](mailto:sales@accountsIQ.com) or [support@accountsIQ.com](mailto:support@accountsIQ.com) for more details.
 
 ## Cashflow Forecasting Systems
-You can pull data out of AccountsIQ into a cash forecasting system. The following endpoints can help create the desired data set.
+You can pull data out of AccountsIQ into a cash forecasting system. In addition, we have an OData end point for some data. The following endpoints can help create the desired data set.
+
+>AIQ Help:
+>
+>- [OData Connection Setup](https://aiq.helpjuice.com/odata/odata-connection-setup?from_search=116658632)
+>- [Creating an OData Connection](https://aiq.helpjuice.com/en_GB/odata/1190738-creating-an-odata-connection)
+>- [Using an Odata Connection](https://aiq.helpjuice.com/en_GB/odata/using-an-odata-connection)
 
 - [`GetTransactions`](https://github.com/accountsIQ/API-Wiki/wiki/GetTransaction): This returns an existing transaction from the system given its unique transaction identifier.
 - [`GetTransactionsBy`](https://github.com/accountsIQ/API-Wiki/wiki/GetTransactionsBy): This returns a filtered list of transactions. This lets you search by date. You can use it to update a data set.
@@ -31,11 +37,20 @@ For budgeting systems, instead of importing transaction data into a third-party 
 
 For basic budgeting, such as overhead spending, GL level analysis might be sufficient. If your analysis system doesn’t need to drill down to transaction level, extracting trial balances could return a detailed enough analysis.
 
+>AIQ Help:
+>
+>- [How Do I Set Up and Maintain General Ledger Accounts?](https://aiq.helpjuice.com/en_GB/general-ledger/287341-how-do-i-setup-and-maintain-general-ledger-accounts)
+
 - [`GetTrialBalanceForPeriod`](https://github.com/accountsIQ/API-Wiki/wiki/GetTrialBalanceForPeriod): This returns the pre-calculated reporting dataset for the trial balance report based on period values.
-- [`GetTrialBalanceFromStartOfPeriod`](https://github.com/accountsIQ/API-Wiki/wiki/GetTrialBalanceFromStartOfPeriod): This returns the trial balance movements for a company since the start of a period.
+- [`GetTrialBalanceFromStartOfPeriod`](https://github.com/accountsIQ/API-Wiki/wiki/GetTrialBalanceFromStartOfPeriod): This returns the trial balance movements for a company since the start of a period, giving a point in time balance in the middle of the period. While `GetTrialBalanceForPeriod` gets full period totals, this gets the balance at any point in the period by going back to the transactions themselves. However, it is slower.
   
 ## P&L Reporting using BI Codes
-Using BI Codes gives you extra control over how you can analyse your data. 
+Using BI Codes (called Departments in the API) gives you extra control over how you can analyse your data. 
+
+> Learn More:
+> 
+> - [How do I Implement Extended Business Analysis?](https://aiq.helpjuice.com/en_GB/analysis/289280-how-do-i-implement-extended-business-analysis)
+> - [Extended Business Analysis for Job or Project Analysis](https://aiq.helpjuice.com/en_GB/analysis/289415-how-do-i-implement-job-or-project-analysis-using-extended-business-analysis)
 
 For example, when raising sales and purchase invoices, the customer can be used as part of the BI Code, so that P&L can be done by customer. This is possible if every invoice is tied to a project and that project is tied to a customer. 
 
@@ -46,9 +61,11 @@ If you have a complex BI code structure and are tracking by customers and projec
 
 BI Codes can have up to six BI dimensions, each with as many elements as needed. They can be based on data from the customer, item code, a third-party system, or a combination.  
 
+BI Codes are linked to transaction lines which in turn link them to dimensions and analysis codes via the BI Setup. This underpins all advanced reporting in the system.
+
 If a third-party system doesn’t have a GL code to post from, use non-stock items to set default BI and GL codes, even if you don’t use them on the invoice.
 
-- [`GetAnalysisDimensionSetup`](https://github.com/accountsIQ/API-Wiki/wiki/GetAnalysisDimensionSetup): This returns the analysis setup.
+- [`GetAnalysisDimensionSetup`](https://github.com/accountsIQ/API-Wiki/wiki/GetAnalysisDimensionSetup): This returns the entire BI setup with each BI Dimension and their underlying codes.
 - [`GetDepartmentById`](https://github.com/accountsIQ/API-Wiki/wiki/GetDepartmentById): This lets you search by BI Code.
 - [`GetDepartmentList`](https://github.com/accountsIQ/API-Wiki/wiki/GetDepartmentList): This returns available BI Codes, both active and inactive.
 - [`GetDepartmentsByAnalysisCode`](https://github.com/accountsIQ/API-Wiki/wiki/GetDepartmentsByAnalysisCode): This lets you search by dimension.
