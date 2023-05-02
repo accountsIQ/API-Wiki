@@ -107,7 +107,7 @@ BI Codes are linked to transaction lines which in turn link them to dimensions a
 
 If a third-party system doesn’t have a GL code to post from, use non-stock items to set default BI and GL codes, even if you don’t use them on the invoice.
 
-- [`GetAnalysisDimensionSetup`](https://github.com/accountsIQ/API-Wiki/wiki/GetAnalysisDimensionSetup): This returns the analysis setup.
+- [`GetAnalysisDimensionSetup`](https://github.com/accountsIQ/API-Wiki/wiki/GetAnalysisDimensionSetup): This returns the entire BI setup with each BI Dimension and their underlying codes.
 - [`GetDepartmentById`](https://github.com/accountsIQ/API-Wiki/wiki/GetDepartmentById): This lets you search by BI Code.
 - [`GetDepartmentList`](https://github.com/accountsIQ/API-Wiki/wiki/GetDepartmentList): This returns available BI Codes, both active and inactive.
 - [`GetDepartmentsByAnalysisCode`](https://github.com/accountsIQ/API-Wiki/wiki/GetDepartmentsByAnalysisCode):This lets you search by dimension.
