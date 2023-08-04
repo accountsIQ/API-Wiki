@@ -19,15 +19,15 @@ AIQ API meets OpenAPI specifications.
 ## WSDL File 
 The WSDL file is the same across all regions, but the endpoint differs by region. 
 
-Enter one of the following in place of `{regioncode}` in the WSDL link:
+In the relevant WSDL version, enter the `{regioncode}` found in your client's URL:
 - us1
 - eu1
 - eu2
 - uk1
 
-`https://{regioncode}.accountsiq.com/system/dashboard/integration/integration_1_1.asmx?wsdl`
+**Version 1.1:** `https://{regioncode}.accountsiq.com/system/dashboard/integration/integration_1_1.asmx?wsdl`
 
-Your AIQ administrator will let you know which `{regioncode}` to use. If you still need help identifying your host location, contact your local support team at [support@accountsIQ.com ](mailto:support@accountsIQ.com).
+**Version 2.0:** `https://{regioncode}.accountsiq.com/system/dashboard/integration/integration_2_0.asmx?wsdl`
 
 When using the WSDL file, it is recommended to refresh the file. However, as we only make backward compatible changes, this is not mandatory.
 

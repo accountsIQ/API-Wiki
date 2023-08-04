@@ -1,13 +1,13 @@
 ---
-title: Authentication
+title: Authentication 1.1
 layout: default
-permalink: authentication.html
+permalink: authentication1.html
 category: Developing
 ---
 
-# Authentication
+# Authentication 1.1
 
-## Login Requirements
+## Login Requirements WSDL 1.1
 To authenticate a user, use the Login function. 
 
 The Login function requires the following:
