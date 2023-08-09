@@ -410,7 +410,7 @@ body { min-width: 400px; }
 
 #___gcse_0 { width: 100%; display: flex; }
 
-.gsc-input-box { width: 200px; border-radius: 3.5px; border-color: #162c5e !important; }
+.gsc-input-box { width: 200px; border-radius: 3.5px; border-color: #162c5e !important; color: #162c5e; }
 
 button.gsc-search-button.gsc-search-button-v2, .gsc-clear-button { background-color: #425eff; border-radius: 3.5px; height: 33px; padding-left: 13px; padding-right: 13px; }
 
