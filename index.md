@@ -6,6 +6,12 @@ title: About
 layout: default
 category: Overview
 ---
+   <head>
+      <meta charset="utf-8">
+      <title>AccountsIQ API</title>
+      <script src="https://kit.fontawesome.com/75a3ff46b4.js" crossorigin="anonymous"></script>
+      <meta name="google-site-verification" content="tjkPy-IEVJEK4vZ_MhefBQtALEfzceY3PSqWi3XYV70" />
+   </head>
 
 # About our API
 
