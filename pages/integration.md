@@ -25,18 +25,6 @@ Our diverse integration partners include the following sectors:
 
 **See:** [ERP Software Integration Partners](https://www.accountsiq.com/features/integrations/software-integration-partner/)
 
-
-## Integration Partner Workflow
-Using a predefined set of methods, integration partners can send a data package to multiple customer databases within AIQ.
-
-If you are an integration partner, the workflow is as follows:
-1. You must set up a Sandbox environment before you can begin developing with the AIQ API.
-2. You will receive an encrypted partner key from AIQ as well as a customer key identifying the AIQ customer database(s). You must submit these keys with each data transfer request. 
-3. Submit a HTTPS request, supplying the two authentication keys along with the relevant parameters. 
-4. The API validates this request and responds with either a success or failure notification. If successful, the relevant data is immediately imported from their application into the tables of the AIQ customer database or imported from AccountsIQ for display or reporting within their own application, for example, stock or customer balance data. If the validation fails, a message will indicate the cause.
-
-**See:** [Authentication](authentication.html)
-
 ## Custom Integration
 With our open API, we can create custom integrations for your existing systems. If you are interested in custom integrations, please contact our team at [sales@accountsIQ.com](mailto:sales@accountsIQ.com) or [support@accountsIQ.com](mailto:support@accountsIQ.com).
 
