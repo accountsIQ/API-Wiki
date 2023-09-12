@@ -58,4 +58,5 @@ Confirm the following:
 - [Specifications](specifications.html)
 - [Guidelines](guidelines.html)
 - [Troubleshooting](troubleshooting.html)
+- [Authentication](authentication2.html)
 

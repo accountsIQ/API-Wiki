@@ -9,7 +9,7 @@ category: Legal
 
 These AccountsIQ API Terms of Use ("API Terms") set out the terms and conditions of use of the AccountsIQ API. If you want to use the AccountsIQ API for any purpose (including without limitation, in connection with an application or software program), you must first register with AccountsIQ by emailing [integration@accountsiq.com](mailto:integration@accountsiq.com).
 
-By submitting Your Registration to AccountsIQ and / or using AccountsIQ API, you explicitly agree to be bound by these API Terms and any revised or renewed versions thereof.
+By submitting your Registration to AccountsIQ and / or using AccountsIQ API, you explicitly agree to be bound by these API Terms and any revised or renewed versions thereof.
 
 AccountsIQ reserves the right, at its sole discretion, to refuse or reject Your Registration.
 

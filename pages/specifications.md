@@ -33,5 +33,6 @@ When using the WSDL file, it is recommended to refresh the file. However, as we 
 
 ### See More:
 - [Guidelines](guidelines.html)
-- [Authentication](authentication.html)
+- [Authentication](authentication1.html)
+- [Authentication](authentication2.html)
 - [Troubleshooting](troubleshooting.html)

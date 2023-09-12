@@ -171,4 +171,5 @@ In this where the Code matches the supplier/customers `CreditTermID` you have tw
 ### See More:
 - [Specifications](specifications.html)
 - [Guidelines](guidelines.html)
-- [Authentication](authentication.html)
+- [Authentication](authentication1.html)
+- [Authentication](authentication2.html)
