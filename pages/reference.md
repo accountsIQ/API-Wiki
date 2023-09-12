@@ -4,6 +4,7 @@ layout: default
 permalink: reference.html
 category: Reference
 ---
+# Reference
 ## Methods
 - [Banks](https://github.com/accountsIQ/API-Wiki/wiki/Banks)
 - [Customer and Supplier Accounts](https://github.com/accountsIQ/API-Wiki/wiki/Customer-and-Supplier-Accounts)

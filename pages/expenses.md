@@ -1,5 +1,5 @@
 ---
-title: Expenses
+title: Integrating Expenses
 layout: default
 permalink: expenses.html
 category: Business Use Cases

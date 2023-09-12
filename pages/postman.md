@@ -1,5 +1,5 @@
 ---
-title: Postman Collection
+title: Using the Postman Collection
 layout: default
 permalink: postman-collection.html
 category: Developing

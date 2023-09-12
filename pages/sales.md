@@ -1,5 +1,5 @@
 ---
-title: Sales Invoicing
+title: Sales Invoicing Integrations
 layout: default
 permalink: sales.html
 category: Business Use Cases

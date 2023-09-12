@@ -1,5 +1,5 @@
 ---
-title: Business Analysis
+title: Integrating Analysis Systems
 layout: default
 permalink: analysis.html
 category: Business Use Cases

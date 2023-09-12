@@ -1,5 +1,5 @@
 ---
-title: Guidelines
+title: Development Guidelines
 layout: default
 permalink: guidelines.html
 category: Developing

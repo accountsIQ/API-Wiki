@@ -1,5 +1,5 @@
 ---
-title: Payment
+title: Receipts and Allocations Integrations
 layout: default
 permalink: payment.html
 category: Business Use Cases

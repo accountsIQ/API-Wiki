@@ -1,5 +1,5 @@
 ---
-title: Data Types
+title: Most popular API Methods
 layout: default
 permalink: datatypes.html
 category: Overview

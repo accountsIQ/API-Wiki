@@ -1,5 +1,5 @@
 ---
-title: Integrating
+title: Integrate with AIQ
 permalink: integration.html
 layout: default
 category: Overview

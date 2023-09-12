@@ -1,5 +1,5 @@
 ---
-title: Payroll
+title: Integrating Payroll
 layout: default
 permalink: payroll.html
 category: Business Use Cases
