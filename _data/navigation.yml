@@ -34,8 +34,8 @@ docs:
         url: /API-Wiki/specifications.html
       - page: Guidelines
         url: /API-Wiki/guidelines.html 
-      - page: Postman Collection
-        url: /API-Wiki/postman-collection.html                
+      # - page: Postman Collection
+      #   url: /API-Wiki/postman-collection.html                
       - page: Authentication 1.1
         url: /API-Wiki/authentication1.html
       - page: Authentication 2.0
