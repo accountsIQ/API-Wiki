@@ -58,5 +58,5 @@ Confirm the following:
 - [Specifications](specifications.html)
 - [Guidelines](guidelines.html)
 - [Troubleshooting](troubleshooting.html)
-- [Authentication 1.1](authentication2.html)
+- [Authentication 2.0](authentication2.html)
 

@@ -22,7 +22,7 @@ You can pull data out of AccountsIQ into a cash forecasting system. In addition,
 >
 >- [OData Connection Setup](https://aiq.helpjuice.com/odata/odata-connection-setup?from_search=116658632)
 >- [Creating an OData Connection](https://aiq.helpjuice.com/en_GB/odata/1190738-creating-an-odata-connection)
->- [Using an Odata Connection](https://aiq.helpjuice.com/en_GB/odata/using-an-odata-connection)
+>- [Using an OData Connection](https://aiq.helpjuice.com/en_GB/odata/using-an-odata-connection)
 
 - [`GetTransactions`](https://github.com/accountsIQ/API-Wiki/wiki/GetTransaction): This returns an existing transaction from the system given its unique transaction identifier.
 - [`GetTransactionsBy`](https://github.com/accountsIQ/API-Wiki/wiki/GetTransactionsBy): This returns a filtered list of transactions. This lets you search by date. You can use it to update a data set.
