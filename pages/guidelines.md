@@ -40,6 +40,6 @@ If you are not in a staging environment:
 
 ### See More:
 - [Specifications](specifications.html)
-- [Authentication](authentication1.html)
-- [Authentication](authentication2.html)
+- [Authentication 1.1](authentication1.html)
+- [Authentication 2.0](authentication2.html)
 - [Troubleshooting](troubleshooting.html)
