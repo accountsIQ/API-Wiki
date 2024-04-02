@@ -37,7 +37,9 @@ docs:
       - page: Authentication 1.1
         url: /API-Wiki/authentication1.html
       - page: Authentication 2.0
-        url: /API-Wiki/authentication2.html        
+        url: /API-Wiki/authentication2.html 
+      - page: Postman Collection
+        url: /API-Wiki/postman-collection-1and2.html        
       - page: Troubleshooting
         url: /API-Wiki/troubleshooting.html           
   - page: API Reference

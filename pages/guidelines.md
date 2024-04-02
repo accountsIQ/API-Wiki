@@ -12,7 +12,7 @@ Before you begin developing with AIQ API, you need access to the following:
 - **Credentials:** This consist of two tokens. AIQ provides a partner token. A user generates a user token within the live company which developers can use to impersonate them.
 
 ## Client Libraries
-Currently, we do not offer client libraries. We can, however, make available a [Postman collection](postman-collection.html) with sample requests. We also have a sample C# project that we can provide on request.
+Currently, we do not offer client libraries. We can, however, make available a [Postman collection](postman-collection-1and2.html) with sample requests. We also have a sample C# project that we can provide on request.
 
 ## Sample API Requests 
 View a library of XML samples of API requests and responses: [Integration_1_1 Web Service](https://uk1.accountsiq.com/system/dashboard/integration/integration_1_1.asmx).
