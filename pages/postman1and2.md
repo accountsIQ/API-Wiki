@@ -21,10 +21,10 @@ category: Developing
 1. Click the **Import** button and locate the collection file. ![postman10](assets\images\postman10.png)
 2. Drag and drop or select the file. ![postman11](assets\images\postman11.png)
 3. Click on the collection to open it. ![postman12](assets\images\postman12.png)
-4. In the **Current Value** fields, set your Company Id, PartnerKey and UserKey. Leave the remaining variables unedited:
+4. In the **Current Value** fields, set your Company Id, PartnerKey and UserKey. Leave the remaining variables unedited: ![postman13](assets\images\postman13.png)
 - Company Id -> coID 
 - Partner Key -> partnerKey 
-- UserKey -> userKey ![postman13](assets\images\postman13.png)
+- UserKey -> userKey 
 1. Save the variables. ![postman14](assets\images\postman14.png)
 2. Search and Open the Login Method and send the request. This will get a token and set it to memory.
 3.  Now call any method. The token is automatically added to the call. 
@@ -47,14 +47,14 @@ category: Developing
 4. Click the **Import** button and locate the collection file. ![postman10](assets\images\postman10.png)
 5. Drag and drop or select the file. ![postman11](assets\images\postman11.png)
 6. Click on the collection to open it. ![postman15](assets\images\postman15.png)
-7. In the **Current Value** fields, set your Company Id, PartnerKey and UserKey. Leave the remaining variables unedited:
-- Company Id -> coID 
-- Partner Key -> partnerKey 
-- UserKey -> userKey ![postman13](assets\images\postman13.png)
+7. In the **Current Value** fields, set your Entity, Client ID and Secret. Leave the remaining variables unedited: ![postman17](assets\images\postman17.png)
+- Entity  -> aiq_client_id 
+- Client ID -> aiq_client_secret 
+- Secret -> aiq_client_secret 
 8. Save the variables. ![postman14](assets\images\postman14.png)
 9. Search and Open the `TokenGet` Method  and send the request. This will get a token and set it to memory as well as a Refresh token.
-10. Now call any method. The token is automatically added to the call. 
-11. Once the token expires, call `TokenRefresh` to get a new set of tokens. 
+10.  Now call any method. The token is automatically added to the call. 
+11.  Once the token expires, call `TokenRefresh` to get a new set of tokens. 
 
 ### See More:
 - [Authentication 2.0](authentication2.html)
