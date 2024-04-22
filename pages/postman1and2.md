@@ -1,7 +1,7 @@
 ---
 title: Installing Postman collection for AIQ SOAP API Version 1.1 
 layout: default
-permalink: postman-collection-1and2.html
+permalink: postman-collection.html
 category: Developing
 ---
 # Installing the AIQ Postman Collection

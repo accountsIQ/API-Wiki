@@ -1,7 +1,7 @@
 ---
 title: Using the Postman Collection
 layout: default
-# permalink: postman-collection.html
+# permalink: 
 category: Developing
 ---
 
