@@ -11,11 +11,11 @@ Create a complete purchase-to-pay routine with an AccountsIQ integration. [Invoi
 Not only does this reduce staff workload by avoiding data entry in multiple systems, it also reduces error as different systems will all have the same records.
 
 ## Our Integration Partners
-We have several options within AccountsIQ for dealing with payments:
+We have several options within [AccountsIQ](https://www.accountsiq.com/features/integrations) for dealing with payments:
 
-- [GoCardless](https://gocardless.com/)
-- [SmartDebit](https://www.accountsiq.com/features/integrations/smartdebit/)
-- [Stripe](https://www.accountsiq.com/features/integrations/stripe-payments/)
+- GoCardless
+- SmartDebit
+- Stripe
   
 Stripe is the most commonly used option. Stripe can identify the invoice and its customer and then create a receipt. The receipt and invoice then get allocated against each other.
 
@@ -28,7 +28,7 @@ The following can be used to identify a customer invoice, create a receipt from 
 
 >AIQ Help:
 >
->- [How do I Process Sales Receipts and Allocations?](https://aiq.helpjuice.com/sales-system/-how-do-i-process-sales-receipts-and-allocation?from_search=116656252)
+>- [Using Sales Receipts and Allocations](https://aiq.helpjuice.com/sales-system/-how-do-i-process-sales-receipts-and-allocation?from_search=116656252)
 
 ### Identifying Invoices
 - [`GetTransaction`](https://github.com/accountsIQ/API-Wiki/wiki/GetTransaction): This retrieves an existing transaction from the system by its unique transaction identifier.

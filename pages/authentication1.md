@@ -7,12 +7,16 @@ category: Developing
 
 # Authentication 1.1
 
+> Version 1.1 is only supported for existing integrations. It will no longer be used for any newly created integrations. To set up new integrations, please refer to the documentation for Version 2.0:
+- [Creating an Integrations Application and Inviting a Developer to the Developer Portal](https://help.accountsiq.com/en_GB/manage-integrations/2079829-integrations-application-and-invite)
+- [Using the Developer Portal and New API Endpoint](https://help.accountsiq.com/en_GB/manage-integrations/using-the-developer-portal-and-new-api-endpoint)
+
 ## Login Requirements WSDL 1.1
 To authenticate a user, use the Login function. 
 
 The Login function requires the following:
 
-- Partner key: This is provided by AccountsIQ. This key is valid across multiple entities. 
+- Partner key: This is provided by AccountsIQ. It must be requested from [support@accountsiq.com](mailto:support@accountsiq.com) and not the integration team. This key is valid across multiple entities. 
 - User key: Generate this from within AccountsIQ by going to **Setup** > **Company Details & Settings**. In the **Integration** tab type the user’s password and click **Request User Key**. It is only valid to impersonate one user in one entity. Multiple keys are required to interact with multiple entities. 
 - Existing Entity identifier: This is provided by AccountsIQ.
 - Existing User identifier: This is provided by AccountsIQ.

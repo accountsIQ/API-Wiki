@@ -31,8 +31,8 @@ Let our API handle complexity in the background instead of your developers creat
 
 ### Learn More:
 - [About our API](index.html)
-- [Integrate with AIQ](integration.md)
-- [Popular Methods](datatypes.md)
+- [Integrate with AIQ](integration.html)
+- [Popular Methods](datatypes.html)
 
 
 

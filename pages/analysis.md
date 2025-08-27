@@ -20,9 +20,9 @@ You can pull data out of AccountsIQ into a cash forecasting system. In addition,
 
 >AIQ Help:
 >
->- [OData Connection Setup](https://aiq.helpjuice.com/odata/odata-connection-setup?from_search=116658632)
+>- [Enabling OData](https://aiq.helpjuice.com/odata/odata-connection-setup?from_search=116658632)
 >- [Creating an OData Connection](https://aiq.helpjuice.com/en_GB/odata/1190738-creating-an-odata-connection)
->- [Using an OData Connection](https://aiq.helpjuice.com/en_GB/odata/using-an-odata-connection)
+>- [Using OData with Excel](https://aiq.helpjuice.com/en_GB/odata/using-an-odata-connection)
 
 - [`GetTransactions`](https://github.com/accountsIQ/API-Wiki/wiki/GetTransaction): This returns an existing transaction from the system given its unique transaction identifier.
 - [`GetTransactionsBy`](https://github.com/accountsIQ/API-Wiki/wiki/GetTransactionsBy): This returns a filtered list of transactions. This lets you search by date. You can use it to update a data set.
@@ -39,7 +39,7 @@ For basic budgeting, such as overhead spending, GL level analysis might be suffi
 
 >AIQ Help:
 >
->- [How Do I Set Up and Maintain General Ledger Accounts?](https://aiq.helpjuice.com/en_GB/general-ledger/287341-how-do-i-setup-and-maintain-general-ledger-accounts)
+>- [Managing General Ledger Accounts](https://aiq.helpjuice.com/en_GB/general-ledger/287341-how-do-i-setup-and-maintain-general-ledger-accounts)
 
 - [`GetTrialBalanceForPeriod`](https://github.com/accountsIQ/API-Wiki/wiki/GetTrialBalanceForPeriod): This returns the pre-calculated reporting dataset for the trial balance report based on period values.
 - [`GetTrialBalanceFromStartOfPeriod`](https://github.com/accountsIQ/API-Wiki/wiki/GetTrialBalanceFromStartOfPeriod): This returns the trial balance movements for a company since the start of a period, giving a point in time balance in the middle of the period. While `GetTrialBalanceForPeriod` gets full period totals, this gets the balance at any point in the period by going back to the transactions themselves. However, it is slower.
@@ -49,8 +49,8 @@ Using BI Codes (called Departments in the API) gives you extra control over how 
 
 > Learn More:
 > 
-> - [How do I Implement Extended Business Analysis?](https://aiq.helpjuice.com/en_GB/analysis/289280-how-do-i-implement-extended-business-analysis)
-> - [Extended Business Analysis for Job or Project Analysis](https://aiq.helpjuice.com/en_GB/analysis/289415-how-do-i-implement-job-or-project-analysis-using-extended-business-analysis)
+> - [Using BI Codes for Extended Business Analysis](https://aiq.helpjuice.com/en_GB/analysis/289280-how-do-i-implement-extended-business-analysis)
+> - [Using Extended Business Analysis for Job or Project Analysis](https://aiq.helpjuice.com/en_GB/analysis/289415-how-do-i-implement-job-or-project-analysis-using-extended-business-analysis)
 
 For example, when raising sales and purchase invoices, the customer can be used as part of the BI Code, so that P&L can be done by customer. This is possible if every invoice is tied to a project and that project is tied to a customer. 
 
