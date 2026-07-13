@@ -16,7 +16,7 @@ To authenticate a user, use the Login function.
 
 The Login function requires the following:
 
-- Partner key: This is provided by AccountsIQ. It must be requested from [support@accountsiq.com](mailto:support@accountsiq.com) and not the integration team. This key is valid across multiple entities. 
+- Partner key: Previously a partner key was provided by AccountsIQ. However, it is no longer provided for newly created integrations. 
 - User key: Generate this from within AccountsIQ by going to **Setup** > **Company Details & Settings**. In the **Integration** tab type the user’s password and click **Request User Key**. It is only valid to impersonate one user in one entity. Multiple keys are required to interact with multiple entities. 
 - Existing Entity identifier: This is provided by AccountsIQ.
 - Existing User identifier: This is provided by AccountsIQ.
