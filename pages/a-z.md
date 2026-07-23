@@ -10,38 +10,9 @@ category: Glossary
 **Allocatable Transactions:**
 Transactions that are eligible for allocation.
 
-To cancel each other out, you must match a transaction from Column A with its equivalent from Column B:
-
-<table>
-    <tr>
-        <th>A</th>
-        <th>B</th>
-    </tr>    
-    <tr>
-        <td>Sales Invoice</td>
-        <td>Sales Credit Note</td>
-    </tr>
-    <tr>
-        <td>Sales Payment (Refund)</td>
-        <td>Sales Receipt</td>
-    </tr>
-    <tr>
-        <td>Sales Debit Journal</td>
-        <td>Sales Credit Journal</td>
-    </tr>
-    <tr>
-        <td>Purchases Invoice</td>
-        <td>Purchases Credit Note</td>
-    </tr>
-    <tr>
-        <td>Purchases Receipt</td>
-        <td>Purchases Payment (Refund)</td>
-    </tr>
-    <tr>
-        <td>Purchase Credit Journal</td>
-        <td>Purchase Debit Journal</td>
-    </tr>
-</table>
+Transactions can be allocated as follows:
+- **Sales Allocations:** Sales Invoices and Sales Debit Journals can be allocated against Sales Receipts, Sales Credit Notes, and Sales Credit Journals, and vice versa.
+- **Purchase Allocations:** Purchase Invoices and Purchase Credit Journals can be allocated against Purchase Payments, Purchase Credit Notes, and Purchase Debit Journals, and vice versa.
 
 ## B
 
@@ -97,21 +68,15 @@ The following transaction types exist in the AccountsIQ system:
 - BR: Bank Receipt
 - DP: Purchases Discount
 - DS: Sales Discount
-- GA: Accrual
-- GP: Prepayment
-- ST: Stock Transfer
 - GC/GD: General Journal
 - PC: Purchases Credit Journal
 - PD: Purchases Debit Journal
 - PI: Purchases Invoice
 - PN: Purchases Credit Note
-- PP: Purchases Payment (Refund)
+- PP: Purchases Payment
 - PR: Purchases Receipt
-- PX: Purchases Currency Fluctuation
 - SC: Sales Credit Journal
 - SD: Sales Debit Journal
 - SI: Sales Invoice
 - SN: Sales Credit Note
-- SP: Sales Payment (Refund)
 - SR: Sales Receipt
-- SX: Sales Currency Fluctuation
